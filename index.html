@@ -1,37 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Dennis Felicia's Course Hub</title>
     <link rel="stylesheet" href="styles.css">
-</header>
+    <meta name="description" content="A Central hub of course materials and information for CIS236, Math 91, and CIS155.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, CIS236, Math 91, CIS155, Dennis Felicia, course information, web development">
+    <meta name="author" content="Dennis Felicia">
+</head>
+
 <body>
     <header>
-        <h1>My First Website</h1>
-        <p>Courses: CIS236/Math 91/CIS155</p>
+        <h1>Dennis Felicia's Website</h1>
+        <p>Exploring Web Development Through My Courses: CIS236/Math 91/CIS155</p>
     </header>
 
-    <main>
-        <section id="pokemon-section">
-            <h2 id="bulbasaur-header">Bulbasaur</h2>
-            <h2 id="charmander-header">Charmander</h2>
-            <h2 id="squirtle-header">Squirtle</h2>
-        </section>
-        
     <nav>
+        <h2>Site Navigation</h2>
         <ul>
-            <li><a href="/index.html">Index</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="Page2.html">Page 2</a></li>
+            <li><a href="Page3.html">Page 3 (Under Construction)</a></li>
+            <li><a href="https://www.google.com" target="_blank">Visit External Website</a></li>
         </ul>
     </nav>
-            <li>Check this out!</li>
-            <li><a href="https://www.google.com">Link</a></li>
-            <li><a href="Page2.html">Go to Page 2</a></li>
-        </ul>
-    </main>
 
+    <main>
+        <section id="course-overview">
+            <h2>Course information</h2>
+            <p>Welcome to my personal website, where I'll be organizing and showcasing information related to my current courses. This site serves as a practical application of HTML, CSS, and JavaScript</p>
+        </section>
+
+
+        <section id="pokémon-showcase">
+            <h2>Starter Pokémon Exploration</h2>
+            <p>As a fun element and to practice structuring related content.</p>
+
+            <nav>
+                <h3>Quick Links:</h3>
+                <ul>
+                    <li><a href="#bulbasaur-details">Bulbasaur Details</a></li>
+                    <li><a href="#charmander-details">Charmander Details</a></li>
+                    <li><a href="#squirtle-details">Squirtle Details</a></li>
+                </ul>
+            </nav>
+
+            <article class="pokémon-entry">
+                <h3 id="bulbasaur-header">Bulbasaur</h3>
+                <img src="images/bulbasaur.png" alt="Bulbasaur, the seed Pokémon" width="100">
+                <p>Bulbasaur, the Seed Pokémon. It is a dual-type Grass/Poison Pokémon.</p>
+                <a href="#bulbasaur-details">Learn More about Bulbasaur</a>
+                <div id="bulbasaur-details" style="margin-top: 20px; border: 1px dashed #ccc; padding: 10px;">
+                    <h4>bulbasaur Details:</h4>
+                    <p>Bulbasaur is a small, quadrupedal Pokémon that is primarily blue-green in color. It has a dark green bulb on its back, which grows as it ages. It is known for its gentle nature and its strong connection to nature.</p>
+                </div>
+            </article>
+
+            <article class="pokémon-entry">
+                <h3 id="charmander-header">charmander</h3>
+                <img src="images/charmander.png" alt="Charmander, the lizard Pokémon" width="100">
+                <p>Charmander, the Lizard Pokémon. It is a Fire-type Pokémon.</p>
+                <a href="#charmander-details">Learn More about Charmander</a>
+                
+                <div id="charmander-details" style="margin-top: 20px;border: 1px dashed #ccc; padding: 10px;">
+                    <h4>Charmander Details:</h4>
+                    <p>Charmander is a small, bipedal lizard-like Pokémon with a yellow-orange body. It has a flame at the tip of its tail, which burns brightly when it is healthy and can flicker or burn out if it is weak or sick. It evolves into Charmelon.</p>
+                </div>
+            </article>
+
+            <article class="pokémon-entry">
+                <h3 id="squirtle-header">Squirtle</h3>
+                <img src="images/Squirtle.png" alt="Squirtle, the tiny turtle Pokémon" width="100">
+                <p>Squirtle, the Tiny Turtle Pokémon. It is a Water-type Pokémon.</p>
+                <a href="#squirtle-details"> Learn More about Squirtle</a>
+                <div id="squirtle-details" style="margin-top: 20px; border: 1px dashed #ccc; padding: 10px;">
+                    <h4>Squirtle Details:</h4>
+                    <p>Squirtle, the tiny turtle Pokémon. It is a water-type Pokémon. Squirtle is a small, bipedal turtle Pokémon with a light blue shell. Its tail is curled and it has large, expressive eyes.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="project-links">
+            <h2>My Projects</h2>
+            <ul>
+                <li><a href="project1/index.html">My First Project</a></li>
+                <li><a href="project2/index.html">Interactive Form</a></li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <img height="100" src="https://cdn.wallpapersafari.com/46/51/01wsum.jpg" alt="Golf Image">
