@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <div id="nav-component"></div>
+    <script src="script.js"></script>
+
     <header>
         <h1>Dennis Felicia's Website</h1>
         <p>Exploring Web Development Through My Courses: CIS236/Math 91/CIS155</p>
@@ -27,69 +30,53 @@
         </ul>
     </nav>
 
-    <main>
-        <section id="course-overview">
-            <h2>Course information</h2>
-            <p>Welcome to my personal website, where I'll be organizing and showcasing information related to my current courses. This site serves as a practical application of HTML, CSS, and JavaScript</p>
-        </section>
-
-
-        <section id="pokémon-showcase">
-            <h2>Starter Pokémon Exploration</h2>
-            <p>As a fun element and to practice structuring related content.</p>
-
-            <nav>
-                <h3>Quick Links:</h3>
-                <ul>
-                    <li><a href="#bulbasaur-details">Bulbasaur Details</a></li>
-                    <li><a href="#charmander-details">Charmander Details</a></li>
-                    <li><a href="#squirtle-details">Squirtle Details</a></li>
-                </ul>
-            </nav>
-
-            <article class="pokémon-entry">
-                <h3 id="bulbasaur-header">Bulbasaur</h3>
-                <img src="images/bulbasaur.png" alt="Bulbasaur, the seed Pokémon" width="100">
-                <p>Bulbasaur, the Seed Pokémon. It is a dual-type Grass/Poison Pokémon.</p>
-                <a href="#bulbasaur-details">Learn More about Bulbasaur</a>
-                <div id="bulbasaur-details" style="margin-top: 20px; border: 1px dashed #ccc; padding: 10px;">
-                    <h4>bulbasaur Details:</h4>
-                    <p>Bulbasaur is a small, quadrupedal Pokémon that is primarily blue-green in color. It has a dark green bulb on its back, which grows as it ages. It is known for its gentle nature and its strong connection to nature.</p>
-                </div>
-            </article>
-
-            <article class="pokémon-entry">
-                <h3 id="charmander-header">charmander</h3>
-                <img src="images/charmander.png" alt="Charmander, the lizard Pokémon" width="100">
-                <p>Charmander, the Lizard Pokémon. It is a Fire-type Pokémon.</p>
-                <a href="#charmander-details">Learn More about Charmander</a>
-                
-                <div id="charmander-details" style="margin-top: 20px;border: 1px dashed #ccc; padding: 10px;">
-                    <h4>Charmander Details:</h4>
-                    <p>Charmander is a small, bipedal lizard-like Pokémon with a yellow-orange body. It has a flame at the tip of its tail, which burns brightly when it is healthy and can flicker or burn out if it is weak or sick. It evolves into Charmelon.</p>
-                </div>
-            </article>
-
-            <article class="pokémon-entry">
-                <h3 id="squirtle-header">Squirtle</h3>
-                <img src="images/Squirtle.png" alt="Squirtle, the tiny turtle Pokémon" width="100">
-                <p>Squirtle, the Tiny Turtle Pokémon. It is a Water-type Pokémon.</p>
-                <a href="#squirtle-details"> Learn More about Squirtle</a>
-                <div id="squirtle-details" style="margin-top: 20px; border: 1px dashed #ccc; padding: 10px;">
-                    <h4>Squirtle Details:</h4>
-                    <p>Squirtle, the tiny turtle Pokémon. It is a water-type Pokémon. Squirtle is a small, bipedal turtle Pokémon with a light blue shell. Its tail is curled and it has large, expressive eyes.</p>
-                </div>
-            </article>
-        </section>
-
-        <section id="project-links">
-            <h2>My Projects</h2>
+    <div class="container">
+        <aside class="sidebar-left">
+            <h2>about Me</h2>
+            <p>Hello Everyone! I'm Dennis Felicia, a student passionate about web development and technology. This website serves as a central hub for my learning journey through various courses.</p>
+            <p>Curently, I'm focusing on mastering the fundamentals of web technologies and applying them in practical projects.</p>
+            <h3>Current Courses:</h3>
             <ul>
-                <li><a href="project1/index.html">My First Project</a></li>
+                <li>CIS236: Information System Security I</li>
+                <li>Math 91: PreAlgebra</li>
+                <li>CIS155: Web Development I</li>
+            </ul>
+            <p>Feel free to explore the site for resources and updates!</p>
+        </aside>
+
+        <main class="content">
+            <section id="course-overview">
+                <h2>Welcome to my Course Hub!</h2>
+                <p>This site is dedicated to organizing and showcasing the materials, projects, and share what I'm learning in web development, programming, and related field.</p>
+                <p>Navigate through the site using the links above to find specific course information, projects examples, and more.</p>
+            </section>
+
+            <div style="text-align: center; margin-bottom: 20px;">
+                <button id="changeHeaderBtn">Change Welcome Button</button>
+            </div>
+
+            <section id="project-links">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I've been working on:</p>
+            <ul>
+                <li><a href="project1/index.html">My First Project: A Simple Portfolio</a></li>
                 <li><a href="project2/index.html">Interactive Form</a></li>
             </ul>
-        </section>
-    </main>
+            </section>
+        </main>
+
+        <aside class="sidebar-right">
+            <h2>Resources & Links</h2>
+            <p>Helpful resources for my studies:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://wwww.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                <li><a href="https://validator.w3.org/" target="_blank">W3C validator</a></li>
+                <li><a href="https://colorhunt.co/" target="_blank">Color Hunt (Color Palettes)</a></li>
+                <li><a href="https://www.adobe.com/products/color.html" target="_blank">Adobe Color</a></li>
+            </ul>
+        </aside>
+    </div>
 
     <footer>
         <img height="100" src="https://cdn.wallpapersafari.com/46/51/01wsum.jpg" alt="Golf Image">
