@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 3</title>
-    <link rel="stylesheet" href="../Assignment3/styles.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Page 3 of Dennis Felicia's course hub website.">
+    <meta name="keywords" content="HTML, CSS, Flexbox, Page 3, Dennis Felicia">
+    <meta name="author" content="Dennis Felicia">
 </head>
+
 <body>
-    <h1>Welcome to Page 3!</h1>
 
-    <div class="container">
-        <div class="left">The Left Side</div>
-        <div class="middle">The Middle</div>
-        <div class="right">The Right Side</div>
-    </div>
+    <header class="site-header">
+        <h1>Welcome to Page 3!</h1>
+        <p>This page uses Flexbox for layout and includes enough content to meet the viewport height.</p>
+    </header>
 
-    <p>This is the third page of my website.</p>
-    <p><a href="index.html">Back to the Index Page</a></p>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="https://www.google.com" target="_blank">External Site</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="flex-columns">
+        <section class="column">
+            <h2>About CIS236</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
+                ante dapibus diam.</p>
+        </section>
+        <aside class="column">
+            <h2>Course Highlights</h2>
+            <ul>
+                <li>Security appliances</li>
+                <li>TCP headers</li>
+                <li>VPN protocols</li>
+                <li>Packet analysis</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Dennis Felicia</p>
+    </footer>
 </body>
+
 </html>

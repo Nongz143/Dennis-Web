@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
-    <link rel="stylesheet" href="../Assignment3/styles.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Page 2 of Dennis Felicia's course hub website.">
+    <meta name="keywords" content="HTML, CSS, Flexbox, Grid, Page 2, Dennis Felicia">
+    <meta name="author" content="Dennis Felicia">
 </head>
+
 <body>
-    <h1>Welcome to Page 2!</h1>
+    <header class="site-header">
+        <h1>Welcome to Page 2!</h1>
+        <p>Exploring layout strategies with Flexbox and Grid.</p>
+    </header>
 
-    <div class="container">
-        <div class="left">The Left Side</div>
-        <div class="middle">The Middle</div>
-        <div class="right">The Right Side</div>
-    </div>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="https://www.google.com" target="_blank">External Site</a></li>
+        </ul>
+    </nav>
 
-    <p>This is the second page of my website.</p>
-    <p><a href="index.html">Back to the Index Page</a></p>
+
+    <section class="grid-container">
+        <div class="content-card">
+            <h3>Flexbox Example</h3>
+            <p>This card demonstrates a flex layout inside a grid cell.</p>
+        </div>
+        <div class="content-card">
+            <h3>Responsive Design</h3>
+            <p>Resize the browser to see how the layout adapts.</p>
+        </div>
+        <div class="content-card">
+            <h3>Course Insight</h3>
+            <p>Learn how CIS236 applies layout strategies in real-world web development.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Dennis Felicia</p>
+    </footer>
 </body>
+
 </html>

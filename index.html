@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis Felicia's Course Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="A Central hub of course materials and information for CIS236, Math 91, and CIS155.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, CIS236, Math 91, CIS155, Dennis Felicia, course information, web development">
+    <meta name="description"
+        content="A Central hub of course materials and information for CIS236, Math 91, and CIS155.">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, CIS236, Math 91, CIS155, Dennis Felicia, course information, web development">
     <meta name="author" content="Dennis Felicia">
 </head>
 
@@ -24,58 +26,100 @@
         <h2>Site Navigation</h2>
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="Page2.html">Page 2</a></li>
-            <li><a href="Page3.html">Page 3 (Under Construction)</a></li>
+            <li><a href="Page2.html">Page 2 - Dennis Felicia's Course Hub</a></li>
+            <li><a href="Page3.html">Page 3 - Other Information</a></li>
             <li><a href="https://www.google.com" target="_blank">Visit External Website</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <aside class="sidebar-left">
-            <h2>about Me</h2>
-            <p>Hello Everyone! I'm Dennis Felicia, a student passionate about web development and technology. This website serves as a central hub for my learning journey through various courses.</p>
-            <p>Curently, I'm focusing on mastering the fundamentals of web technologies and applying them in practical projects.</p>
-            <h3>Current Courses:</h3>
-            <ul>
-                <li>CIS236: Information System Security I</li>
-                <li>Math 91: PreAlgebra</li>
-                <li>CIS155: Web Development I</li>
-            </ul>
-            <p>Feel free to explore the site for resources and updates!</p>
-        </aside>
+    <div class="grid-container">
+        <div class="content-card">
+            <h3>About Me</h3>
+            <p>Learn more about Dennis Felicia and his journey through web development.</p>
+            <img src="images/about-icon.png" alt="About icon">
+        </div>
 
-        <main class="content">
-            <section id="course-overview">
-                <h2>Welcome to my Course Hub!</h2>
-                <p>This site is dedicated to organizing and showcasing the materials, projects, and share what I'm learning in web development, programming, and related field.</p>
-                <p>Navigate through the site using the links above to find specific course information, projects examples, and more.</p>
-            </section>
+        <div class="content-card">
+            <h3>Course Hub</h3>
+            <p>Access materials for CIS236, Math 91, and CIS155 in one place.</p>
+            <img src="images/course-icon.png" alt="Course icon">
+        </div>
 
-            <div style="text-align: center; margin-bottom: 20px;">
-                <button id="changeHeaderBtn">Change Welcome Button</button>
-            </div>
+        <div class="content-card">
+            <h3>Projects</h3>
+            <p>Explore hands-on projects and demos built during the course.</p>
+            <img src="images/projects-icon.png" alt="Projects icon">
+        </div>
 
-            <section id="project-links">
+        <div class="content-card">
+            <h3>Resources</h3>
+            <p>Find helpful links, tutorials, and documentation to support your learning.</p>
+            <img src="images/resources-icon.png" alt="Resources icon">
+        </div>
+
+        <div class="content-card">
+            <h3>Contact</h3>
+            <p>Reach out with questions or collaboration ideas.</p>
+            <img src="images/contact-icon.png" alt="Contact icon">
+        </div>
+
+        <div class="content-card">
+            <h3>Updates</h3>
+            <p>Stay informed with the latest announcements and site changes.</p>
+            <img src="images/updates-icon.png" alt="Updates icon">
+        </div>
+    </div>
+
+
+    <aside class="sidebar-left">
+        <h2>About Me</h2>
+        <p>Hello Everyone! I'm Dennis Felicia, a student passionate about web development and technology. This website
+            serves as a central hub for my learning journey through various courses.</p>
+        <p>Curently, I'm focusing on mastering the fundamentals of web technologies and applying them in practical
+            projects.</p>
+        <h3>Current Courses:</h3>
+        <ul>
+            <li>CIS236: Information System Security I</li>
+            <li>Math 91: Pre-Algebra</li>
+            <li>CIS155: Web Development I</li>
+        </ul>
+        <p>Feel free to explore the site for resources and updates!</p>
+    </aside>
+
+    <main class="content">
+        <section id="course-overview">
+            <h2>Welcome to my Course Hub!</h2>
+            <p>This site is dedicated to organizing and showcasing the materials, projects, and share what I'm learning
+                in web development, programming, and related field.</p>
+            <p>Navigate through the site using the links above to find specific course information, projects examples,
+                and more.</p>
+        </section>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <button id="changeHeaderBtn">Change Welcome Button</button>
+        </div>
+
+        <section id="project-links">
             <h2>My Projects</h2>
             <p>Here are some of the projects I've been working on:</p>
             <ul>
                 <li><a href="project1/index.html">My First Project: A Simple Portfolio</a></li>
                 <li><a href="project2/index.html">Interactive Form</a></li>
             </ul>
-            </section>
-        </main>
+        </section>
+    </main>
 
-        <aside class="sidebar-right">
-            <h2>Resources & Links</h2>
-            <p>Helpful resources for my studies:</p>
-            <ul>
-                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
-                <li><a href="https://wwww.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-                <li><a href="https://validator.w3.org/" target="_blank">W3C validator</a></li>
-                <li><a href="https://colorhunt.co/" target="_blank">Color Hunt (Color Palettes)</a></li>
-                <li><a href="https://www.adobe.com/products/color.html" target="_blank">Adobe Color</a></li>
-            </ul>
-        </aside>
+    <aside class="sidebar-right">
+        <h2>Resources & Links</h2>
+        <p>Helpful resources for my studies:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://wwww.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+            <li><a href="https://validator.w3.org/" target="_blank">W3C validator</a></li>
+            <li><a href="https://colorhunt.co/" target="_blank">Color Hunt (Color Palettes)</a></li>
+            <li><a href="https://www.adobe.com/products/color.html" target="_blank">Adobe Color</a></li>
+        </ul>
+    </aside>
     </div>
 
     <footer>
@@ -86,4 +130,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
