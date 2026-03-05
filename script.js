@@ -23,13 +23,16 @@ fetch("components/nav.html")
     .catch(error => {
         console.error("Failed to load nav.html:", error);
     });
+    
     document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("changeHeaderBtn");
   button.addEventListener("click", function () {
     const header = document.querySelector("h1");
     if (header) {
       header.textContent = "Welcome to Dennis-Web!";
+      header.classList.add("fade-in");
+      header.style.color = "#0077cc"; // Change header text color
+      alert("Header updated successfully!");
     }
   });
 });
-
