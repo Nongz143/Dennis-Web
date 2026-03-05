@@ -23,4 +23,13 @@ fetch("components/nav.html")
     .catch(error => {
         console.error("Failed to load nav.html:", error);
     });
+    document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("changeHeaderBtn");
+  button.addEventListener("click", function () {
+    const header = document.querySelector("h1");
+    if (header) {
+      header.textContent = "Welcome to Dennis-Web!";
+    }
+  });
+});
 
