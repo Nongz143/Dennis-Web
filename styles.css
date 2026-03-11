@@ -204,3 +204,12 @@ footer {
     padding: 15px;
     margin-top: 0;
 }
+
+h2 {
+  font-family: 'Bitcount Ink', sans-serif;
+}
+
+h1 i {
+  color: crimson;
+  margin-right: 8px;
+}
