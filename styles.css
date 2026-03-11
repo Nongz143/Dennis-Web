@@ -208,8 +208,15 @@ footer {
 h1 i {
   color: crimson;
   margin-right: 8px;
+  transition: color 0.3s ease;
 }
 
 h2 {
   font-family: 'Bitcount Ink', sans-serif;
+}
+
+#changeHeaderBtn:hover {
+  background-color: #005fa3;
+  color: white;
+  cursor: pointer;
 }
