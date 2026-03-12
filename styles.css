@@ -220,6 +220,7 @@ footer {
     margin-top: 0;
 }
 
+<<<<<<< HEAD
 h2 {
     font-family: 'Bitcount Ink', sans-serif;
 }
@@ -251,3 +252,20 @@ td {
 thead {
     background-color: #f2f2f2;
 }
+=======
+h1 i {
+  color: crimson;
+  margin-right: 8px;
+  transition: color 0.3s ease;
+}
+
+h2 {
+  font-family: 'Bitcount Ink', sans-serif;
+}
+
+#changeHeaderBtn:hover {
+  background-color: #005fa3;
+  color: white;
+  cursor: pointer;
+}
+>>>>>>> 7144409b1156ecb3433ebd2db17685601acc955d

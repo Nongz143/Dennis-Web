@@ -34,6 +34,10 @@ fetch("components/nav.html")
       header.style.color = "#0077cc"; // Change header text color
       alert("Header updated successfully!");
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7144409b1156ecb3433ebd2db17685601acc955d
     document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("h1");
   const button = document.createElement("button");
