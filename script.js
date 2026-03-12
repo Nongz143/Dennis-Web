@@ -34,5 +34,18 @@ fetch("components/nav.html")
       header.style.color = "#0077cc"; // Change header text color
       alert("Header updated successfully!");
     }
+    document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("h1");
+  const button = document.createElement("button");
+  button.textContent = "Launch Header!";
+  button.style.marginTop = "10px";
+
+  button.addEventListener("click", function () {
+    header.innerHTML = '<i class="fas fa-rocket"></i> Mission Launched!';
+    header.style.color = "#0077cc";
+  });
+
+  document.body.insertBefore(button, document.body.firstChild);
+});
   });
 });
