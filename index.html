@@ -2,22 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dennis Felicia | Web Developer & Network Enthusiast</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Felicia | Web Developer & Network Enthusiast</title>
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink&display=swap" rel="stylesheet">
 
-  <meta name="description" content="A central hub of course materials and information for CIS236, Math 91, and CIS155.">
-  <meta name="keywords" content="HTML, CSS, JavaScript, CIS236, Math 91, CIS155, Dennis Felicia, course information, web development">
-  <meta name="author" content="Dennis Felicia">
+    <meta name="description"
+        content="A central hub of course materials and information for CIS236, Math 91, and CIS155.">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, CIS236, Math 91, CIS155, Dennis Felicia, course information, web development">
+    <meta name="author" content="Dennis Felicia">
 </head>
 
 <body>
@@ -28,17 +30,14 @@
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <h1><i class="fas fa-rocket"></i> Dennis Felicia's Website</h1>
         <p>Exploring Web Development Through My Courses: CIS236/Math 91/CIS155</p>
+        <div class="top-button-bar">
+            <a href="index.html" class="active">Home</a>
+            <a href="Page2.html">Page 2</a>
+            <a href="Page3.html">Page 3</a>
+            <a href="https://www.google.com" target="_blank">External Site</a>
+        </div>
     </header>
 
-    <nav class="navbar">
-        <h2>Site Navigation</h2>
-        <ul class="nav-list">
-            <li><a href="index.html">Dennis Felicia's Course Hub</a></li>
-            <li><a href="Page2.html">Page 2</a></li>
-            <li><a href="Page3.html">Page 3</a></li>
-            <li><a href="https://www.google.com" target="_blank">Visit External Website</a></li>
-        </ul>
-    </nav>
 
     <div class="grid-container">
         <div class="content-card">
@@ -50,24 +49,41 @@
         <div class="content-card">
             <h3>Course Hub</h3>
             <p>Access materials for CIS236, Math 91, and CIS155 in one place.</p>
+            <p>Access materials for CIS236, Math 91, and CIS155 in one place.</p>
+            <ul>
+                <li><a href="cis236.html">CIS236 Web Development</a></li>
+                <li><a href="math91.html">Math 91 Practice</a></li>
+                <li><a href="cis155.html">CIS155 Computer Concepts</a></li>
+            </ul>
             <img src="course-icon.png" alt="Course icon" class="section-icon">
         </div>
 
         <div class="content-card">
             <h3>Projects</h3>
             <p>Explore hands-on projects and demos built during the course.</p>
+            <ul>
+                <li><a href="project1.html">Flexbox Layout Demo</a></li>
+                <li><a href="project2.html">Responsive Grid Showcase</a></li>
+                <li><a href="project3.html">JavaScript Form Validator</a></li>
+            </ul>
             <img src="projects-icon.png" alt="Projects icon" class="section-icon">
         </div>
 
         <div class="content-card">
             <h3>Resources</h3>
             <p>Find helpful links, tutorials, and documentation to support your learning.</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com">W3Schools Tutorials</a></li>
+                <li><a href="https://fonts.google.com">Google Fonts</a></li>
+            </ul>
             <img src="resources-icon.png" alt="Resources icon" class="section-icon">
         </div>
 
         <div class="content-card">
             <h3>Contact</h3>
             <p>Reach out with questions or collaboration ideas.</p>
+            <p>Email: <a href="mailto:dennisfelicia@student.olympic.edu">DennisFelica@student.olympic.edu</a></p>
             <img src="contact-icon.png" alt="Contact icon" class="section-icon">
         </div>
 
@@ -75,6 +91,37 @@
             <h3>Updates</h3>
             <p>Stay informed with the latest announcements and site changes.</p>
             <img src="updates-icon.png" alt="Updates icon" class="section-icon">
+        </div>
+        <div class="content-card">
+            <h3>Course Overview</h3>
+            <p>Here’s a quick summary of my current courses and their focus areas:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Title</th>
+                        <th>Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CIS236</td>
+                        <td>Information System Security</td>
+                        <td>Cybersecurity fundamentals and best practices</td>
+                    </tr>
+                    <tr>
+                        <td>MATH91</td>
+                        <td>Pre-Algebra</td>
+                        <td>Foundational math skills for problem solving</td>
+                    </tr>
+                    <tr>
+                        <td>CIS155</td>
+                        <td>Web Development I</td>
+                        <td>HTML, CSS, and responsive design</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="course-icon.png" alt="Course icon" class="section-icon">
         </div>
     </div>
 
