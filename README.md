@@ -10,4 +10,7 @@ The hardest part was making sure the cards were evenly spaced and responsive acr
 **3. How did media queries change your layout?**  
 Media queries allowed my grid to adapt to different screen sizes. On desktop, the layout shows three columns. On tablets, it switches to two columns, and on mobile devices, it becomes a single column. This makes the site easier to use and read on any device.
 
+- I added a horizontal button bar below my name heading for improved navigation.
+- Each button is styled with hover effects and responsive layout.
+- The buttons link to my internal pages and an external site.
 
