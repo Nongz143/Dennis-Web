@@ -213,3 +213,9 @@ h1 i {
   color: crimson;
   margin-right: 8px;
 }
+
+.section-icon {
+  width: 48px;
+  height: auto;
+  margin-bottom: 10px;
+}
