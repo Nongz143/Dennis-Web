@@ -29,18 +29,17 @@
 </button>
 
 <body>
-    <header class="site-header">
-        <h1><i class="fas fa-rocket" aria-label="Launch icon"></i> Dennis Felicia's Website</h1>
+    <header class="page-header">
+        <h1><i class="fas fa-rocket" aria-label="Site Logo"></i> Dennis Felicia's Website</h1>
+        <nav class="nav-bar">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="Page2.html"><i class="fas fa-file-alt"></i> Page 2</a>
+            <a href="Page3.html"><i class="fas fa-book"></i> Page 3</a>
+            <a href="about.html"><i class="fas fa-user"></i> About</a>
+            <a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i> Google</a>
+        </nav>
     </header>
-    <div id="nav-component"></div>
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="Page2.html"><i class="fas fa-book"></i> Page 2</a></li>
-            <li><a href="Page3.html"><i class="fas fa-cogs"></i> Page 3</a></li>
-            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-        </ul>
-    </nav>
+
     <script>
         fetch("about.html")
             .then(response => response.text())
@@ -50,73 +49,74 @@
     </script>
 
     <main class="content">
-        <section class="card">
+        <section>
             <h2><i class="fas fa-desktop"></i> Open Apps Snapshot</h2>
-
             <div class="app-grid">
-                <div class="app-icon"><i class="fas fa-code"></i> Visual Studio Code</div>
-                <div class="app-icon"><i class="fas fa-globe"></i> Microsoft Edge</div>
-                <div class="app-icon"><i class="fas fa-folder-open"></i> Windows Explorer</div>
-                <div class="app-icon"><i class="fas fa-volume-up"></i> Realtek Audio Control</div>
-                <div class="app-icon"><i class="fas fa-cogs"></i> Settings</div>
-                <div class="app-icon"><i class="fas fa-microchip"></i> Nahimic</div>
+                <div class="card"><i class="fas fa-code"></i> Visual Studio Code</div>
+                <div class="card"><i class="fab fa-edge"></i> Microsoft Edge</div>
+                <div class="card"><i class="fas fa-folder-open"></i> Windows Explorer</div>
+                <div class="card"><i class="fas fa-terminal"></i> ShellHost</div>
+                <div class="card"><i class="fas fa-volume-up"></i> Realtek Audio Control</div>
+                <div class="card"><i class="fas fa-cog"></i> Settings</div>
             </div>
+        </section>
 
-            <div class="table-container">
-                <table class="app-table">
-                    <thead>
-                        <tr>
-                            <th>App Name</th>
-                            <th>Function</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Microsoft Edge</td>
-                            <td>Web browsing</td>
-                            <td>Foreground</td>
-                        </tr>
-                        <tr>
-                            <td>Visual Studio Code</td>
-                            <td>Code editing</td>
-                            <td>Background</td>
-                        </tr>
-                        <tr>
-                            <td>ShellHost</td>
-                            <td>System shell process</td>
-                            <td>Running</td>
-                        </tr>
-                        <tr>
-                            <td>Windows Explorer (x3)</td>
-                            <td>File management</td>
-                            <td>Open (3 windows)</td>
-                        </tr>
-                        <tr>
-                            <td>Realtek Audio Control</td>
-                            <td>Audio settings</td>
-                            <td>Open</td>
-                        </tr>
-                        <tr>
-                            <td>Settings</td>
-                            <td>System configuration</td>
-                            <td>Open</td>
-                        </tr>
-                        <tr>
-                            <td>Nahimic</td>
-                            <td>Audio enhancement</td>
-                            <td>Open</td>
-                        </tr>
-                        <img src="about-icon.png" alt="About icon" class="section-icon">
-                        <h2><i class="fas fa-user"></i> About</h2>
-                    </tbody>
-                </table>
-            </div>
+        <div class="table-container">
+            <table class="app-table">
+                <thead>
+                    <tr>
+                        <th>App Name</th>
+                        <th>Function</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Microsoft Edge</td>
+                        <td>Web browsing</td>
+                        <td>Foreground</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Studio Code</td>
+                        <td>Code editing</td>
+                        <td>Background</td>
+                    </tr>
+                    <tr>
+                        <td>ShellHost</td>
+                        <td>System shell process</td>
+                        <td>Running</td>
+                    </tr>
+                    <tr>
+                        <td>Windows Explorer (x3)</td>
+                        <td>File management</td>
+                        <td>Open (3 windows)</td>
+                    </tr>
+                    <tr>
+                        <td>Realtek Audio Control</td>
+                        <td>Audio settings</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Settings</td>
+                        <td>System configuration</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Nahimic</td>
+                        <td>Audio enhancement</td>
+                        <td>Open</td>
+                    </tr>
+                    <img src="about-icon.png" alt="About icon" class="section-icon">
+                    <h2><i class="fas fa-user"></i> About</h2>
+                </tbody>
+            </table>
+        </div>
+        <section>
+            <h2><i class="fas fa-user-circle"></i> About Me</h2>
+            <p>Hello! I'm Dennis Felicia, a student passionate about web development and programming. I enjoy
+                customizing layouts, refining site structure, and learning new design techniques.</p>
         </section>
-        <section class="card">
-            <h2><i class="fas fa-user"></i> About Me</h2>
-            <p>Hello! I'm Dennis Felicia, a student passionate about web development and programming.</p>
-        </section>
+
 
         <section class="card">
             <img src="course-icon.png" alt="Course Hub icon" class="section-icon">
