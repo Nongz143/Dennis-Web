@@ -18,7 +18,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="styles.css">
@@ -33,15 +33,16 @@
         <h1><i class="fas fa-rocket" aria-label="Launch icon"></i> Dennis Felicia's Website</h1>
     </header>
     <div id="nav-component"></div>
-    <nav>
+    <nav class="nav-bar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Page2.html">Projects</a></li>
-            <li><a href="Page3.html">Contact</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="Page2.html"><i class="fas fa-book"></i> Page 2</a></li>
+            <li><a href="Page3.html"><i class="fas fa-cogs"></i> Page 3</a></li>
+            <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
         </ul>
     </nav>
     <script>
-        fetch("nav.html")
+        fetch("about.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("nav-component").innerHTML = data;
@@ -106,6 +107,8 @@
                             <td>Audio enhancement</td>
                             <td>Open</td>
                         </tr>
+                        <img src="about-icon.png" alt="About icon" class="section-icon">
+                        <h2><i class="fas fa-user"></i> About</h2>
                     </tbody>
                 </table>
             </div>
@@ -116,12 +119,30 @@
         </section>
 
         <section class="card">
+            <img src="course-icon.png" alt="Course Hub icon" class="section-icon">
+            <h2><i class="fas fa-book"></i> Course Hub</h2>
+            <p>Explore course materials, assignments, and helpful resources...</p>
+        </section>
+
+        <section class="card">
             <h2><i class="fas fa-book"></i> Course Hub</h2>
             <ul>
                 <li><a href="#">CIS236</a></li>
                 <li><a href="#">Math 91</a></li>
                 <li><a href="#">CIS155</a></li>
             </ul>
+        </section>
+
+        <section class="card">
+            <img src="resources-icon.png" alt="Resources icon" class="section-icon">
+            <h2><i class="fas fa-tools"></i> Resources</h2>
+            <p>Find links to tutorials, documentation, and learning platforms...</p>
+        </section>
+
+        <section class="card">
+            <img src="contact-icon.png" alt="Contact icon" class="section-icon">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>Reach out via email or social media...</p>
         </section>
 
         <section class="card">
