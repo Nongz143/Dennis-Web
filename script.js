@@ -1,13 +1,20 @@
-// Back to Top button logic
 const backToTopBtn = document.getElementById("backToTopBtn");
-
 window.addEventListener("scroll", function () {
-    backToTopBtn.style.display =
-        document.documentElement.scrollTop > 100 || document.body.scrollTop > 100
-            ? "block"
-            : "none";
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop > 100) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
 });
 
-window.scrollToTop = function () {
+function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-};
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("h1");
+    if (header) {
+        header.classList.add("fade-in");
+    }
+});

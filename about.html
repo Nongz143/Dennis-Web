@@ -1,6 +1,88 @@
-<nav class="nav-buttons">
-    <a href="index.html"><i class="fas fa-home"></i> Home</a>
-    <a href="Page2.html"><i class="fas fa-layer-group"></i> Page 2</a>
-    <a href="Page3.html"><i class="fas fa-th-large"></i> Page 3</a>
-    <a href="https://www.google.com" target="_blank"><i class="Visit External Website"></i> Google.com</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <meta name="description" content="About Dennis Felicia and his current desktop layout." />
+    <meta name="keywords" content="Dennis Felicia, About Me, Open Apps, Web Developer, Snapshot" />
+    <meta name="author" content="Dennis Felicia" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <header class="page-header">
+        <h1><i class="fas fa-user-circle"></i> About Me</h1>
+        <p>Learn more about my background, interests, and current desktop setup while working on this project.</p>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="Page2.html"><i class="fas fa-file-alt"></i> Page 2</a></li>
+                <li><a href="Page3.html"><i class="fas fa-book"></i> Page 3</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i> Google</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section>
+            <h2><i class="fas fa-id-card"></i> Personal Introduction</h2>
+            <p>Hello! I'm Dennis Felicia, a student passionate about web development and programming. I enjoy
+                customizing layouts, refining site structure, and learning new design techniques. This site showcases my
+                final project for CIS236, built using HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-desktop"></i> Current Desktop Snapshot</h2>
+            <p>While working on this project, I had the following apps open on my desktop:</p>
+            <ul>
+                <li><strong>Visual Studio Code</strong> – Active foreground app for editing HTML and CSS</li>
+                <li><strong>Microsoft Edge</strong> – Previewing my live site</li>
+                <li><strong>ShellHost</strong> – Running background processes</li>
+                <li><strong>Windows Explorer</strong> – 5 instances for file navigation</li>
+                <li><strong>Realtek Audio Control</strong> – Managing sound settings</li>
+                <li><strong>Settings</strong> – Adjusting system preferences</li>
+            </ul>
+            <p>While building this project, my screen was a busy workspace. Visual Studio Code was front and center —
+                that’s where I wrote and refined my HTML and CSS. On the right, Microsoft Edge showed a live preview of
+                my site so I could instantly see changes. Behind the scenes, ShellHost kept things running, five Windows
+                Explorer windows helped me navigate files, and Realtek Audio Control plus Settings were open to manage
+                sound and system tweaks. It was a full setup, and every app played a role in helping me stay focused and
+                organized.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-lightbulb"></i> What I’m Proud Of</h2>
+            <ul>
+                <li>Creating a responsive multi-page website using semantic HTML and CSS Grid that adapts beautifully
+                    across screen sizes</li>
+                <li>Designing a clean, icon-enhanced navigation bar that feels intuitive and polished</li>
+                <li>Capturing my actual desktop layout — with Visual Studio Code, Edge, ShellHost, and five Explorer
+                    windows — to show how I work behind the scenes</li>
+                <li>Learning how to structure content clearly and professionally while managing real-time previews and
+                    system tools</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dennis Felicia. All rights reserved.</p>
+    </footer>
+
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
