@@ -104,6 +104,13 @@ body {
     margin-right: auto;
 }
 
+.caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
 .desktop-image {
     max-width: 100%;
     width: 100%;
