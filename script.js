@@ -9,6 +9,13 @@ window.addEventListener("scroll", function () {
     }
 });
 
+function highlightApp(button) {
+    const allButtons = document.querySelectorAll(".app-buttons button");
+    allButtons.forEach(btn => btn.classList.remove("active"));
+
+    button.classList.add("active");
+}
+
 backToTopBtn.addEventListener("click", function () {
     window.scrollTo({
         top: 0,
