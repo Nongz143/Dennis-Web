@@ -1,38 +1,52 @@
 Hello All!
 
-# Dennis Felicia's Web Project 
+# Dennis Felicia – Final Web Project
 
-🧭 Overview
-This project showcases my ability to build a responsive multi-page website using HTML, CSS, and JavaScript. It features semantic structure, grid and flexbox layout strategies, a Google Font, FontAwesome icons, a favicon, and a dynamic back-to-top button. The site is hosted on GitHub Pages:
-👉 Dennis Felicia's Website
+## 🌐 Project Overview
+This is my final web project for CIS 155. It includes a responsive homepage and three subpages, built with semantic HTML, CSS Grid, Flexbox, and JavaScript. The site is designed to be clean, accessible, and visually appealing across all screen sizes.
 
-🧱 Layout Strategy
-I used CSS Grid to organize the main content cards and Flexbox within individual sections for alignment and spacing. The  container centers the layout and adapts to screen size using  and .
-Responsive design is achieved with media queries to ensure readability on mobile devices.
+## 🛠️ Technologies Used
+- HTML5
+- CSS3 (Grid, Flexbox, Media Queries)
+- JavaScript (Back-to-top button, scroll detection)
+- FontAwesome icons
+- Google Fonts (Playfair Display)
+- GitHub Pages for deployment
 
-🧩 Challenges Faced
-• 	Fixing broken HTML syntax (e.g., malformed  and  tags)
-• 	Cleaning up navigation structure and removing unused scripts
-• 	Aligning the layout for the "Open Apps Snapshot" section
-• 	Ensuring all icons and fonts loaded correctly across pages
+## 📸 Desktop Snapshot
+The following is a snapshot of my desktop while working on this project:
 
-💬 Peer Feedback
-Wendy's Suggestions
-• 	Add missing icons and fix FontAwesome link
-• 	Resolve 404 errors in the navigation bar
-• 	Center the copyright text
-Mitchell's Suggestions
-• 	Center the grid container for better visual balance
-✅ I implemented all of these suggestions and confirmed they work across all pages.
+![Dennis's Desktop Screenshot](images/desktop-screenshot.png)
 
-🖥️ Desktop Snapshot
-While working on this project, my screen was a busy workspace. Visual Studio Code was front and center — that’s where I wrote and refined my HTML and CSS. On the right, Microsoft Edge showed a live preview of my site so I could instantly see changes. Supporting apps like ShellHost, five Windows Explorer windows, Realtek Audio Control, and Settings were open to help me manage files and system settings as I built and refined my pages.
+### 🖥️ Currently Open Apps
+- Visual Studio Code (active window)
+- ShellHost
+- Microsoft Edge
+- Windows Explorer (5 instances)
+- Realtek Audio Control
+- Settings
 
-🌟 What I'm Proud Of
-• 	Creating a responsive multi-page website using semantic HTML and CSS Grid
-• 	Designing a clean, icon-enhanced navigation bar with hover effects
-• 	Capturing my actual desktop layout to show how I work behind the scenes
-• 	Learning how to structure content clearly and professionally while managing real-time previews and system too
+You should use this screenshot as a map to understand where the apps are placed around each other on the screen, and to understand operating system components not visible in app screenshots — like the taskbar, terminal, and workspace layout — which play a key role in how I build and preview my site.
+
+## 💬 Peer Feedback Incorporated
+I received helpful feedback from Wendy and Mitchell:
+
+- **Wendy** suggested enlarging the navigation buttons and resizing the icons for better readability.  
+  ✅ I updated the CSS to increase button padding and icon size across all pages.
+
+- **Mitchell** recommended adding more meaningful content to Page 3 and making the snapshot section responsive.  
+  ✅ I replaced the table with a responsive app list and added a humanized description of my desktop layout.
+
+## 🎯 What I'm Proud Of
+- Fully responsive layout using Grid and Flexbox
+- Clean semantic structure across all pages
+- Polished visual design with consistent icons and fonts
+- Clear documentation and organized folder structure
+- Realistic desktop snapshot with meaningful context
+
+## 🔗 Live Site
+Visit the published site here:  
+[https://nongz143.github.io/Dennis-Web/](https://nongz143.github.io/Dennis-Web/)
 
 ## Final Thoughts
 

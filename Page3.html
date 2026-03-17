@@ -3,78 +3,51 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
-    <meta name="description" content="Dennis Felicia's Page 3 showcasing open apps and layout demo." />
-    <meta name="keywords" content="Dennis Felicia, Page 3, Flexbox, layout, open apps, snapshot" />
-    <meta name="author" content="Dennis Felicia" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body>
     <header class="page-header">
-        <h1><i class="fas fa-window-restore"></i> Welcome to Page 3</h1>
-        <p>This page uses Flexbox and Grid to showcase my current desktop layout and open apps while working on this
-            project.</p>
+        <h1><i class="fas fa-book"></i> Page 3</h1>
         <nav class="nav-bar">
             <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="Page2.html"><i class="fas fa-file-alt"></i> Page 2</a></li>
-                <li><a href="Page3.html"><i class="fas fa-book"></i> Page 3</a></li>
-                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i> Google</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Page2.html">Page 2</a></li>
+                <li><a href="Page3.html">Page 3</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="content">
-        <section>
-            <h2><i class="fas fa-desktop"></i> Open Apps Snapshot</h2>
-            <div class="app-grid">
-                <div class="card"><i class="fas fa-code"></i> Visual Studio Code (active)</div>
-                <div class="card"><i class="fab fa-edge"></i> Microsoft Edge</div>
-                <div class="card"><i class="fas fa-terminal"></i> ShellHost</div>
-                <div class="card"><i class="fas fa-folder-open"></i> Windows Explorer (5 instances)</div>
-                <div class="card"><i class="fas fa-volume-up"></i> Realtek Audio Control</div>
-                <div class="card"><i class="fas fa-cog"></i> Settings</div>
+        <section class="card snapshot-card">
+            <h2><i class="fas fa-desktop"></i> Desktop Snapshot</h2>
+            <p class="snapshot-description">
+                This screenshot shows my actual desktop while working on this project. Visual Studio Code is open and
+                active, with Microsoft Edge previewing my site. Other apps like ShellHost, Windows Explorer (5
+                instances), Realtek Audio Control, and Settings are open in the background.
+            </p>
+            <div class="snapshot-image-wrapper">
+                <img src="images/desktop-screenshot.png" alt="Dennis's Desktop Screenshot" class="desktop-image" />
             </div>
-        </section>
-
-        <section>
-            <h2><i class="fas fa-map"></i> Desktop Layout Description</h2>
-            <p>My current desktop setup includes Visual Studio Code as the active foreground app, occupying the left
-                half of the screen. Microsoft Edge is open in the background on the right, displaying my live site
-                preview. ShellHost and multiple Windows Explorer windows are running in the background, along with
-                Realtek Audio Control and Settings.</p>
-        </section>
-
-        <section>
-            <h2><i class="fas fa-lightbulb"></i> What I Learned</h2>
-            <ul>
-                <li>How to use Flexbox and Grid for responsive layout</li>
-                <li>How to organize content semantically with HTML5</li>
-                <li>How to polish navigation and layout for final submission</li>
-                <li>How to reflect real-world app usage in a webpage snapshot</li>
+            <h3>Currently Open Apps</h3>
+            <ul class="app-list">
+                <li><strong>Visual Studio Code</strong> (active window)</li>
+                <li><strong>ShellHost</strong></li>
+                <li><strong>Microsoft Edge</strong></li>
+                <li><strong>Windows Explorer</strong> (5 instances)</li>
+                <li><strong>Realtek Audio Control</strong></li>
+                <li><strong>Settings</strong></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Dennis Felicia. All rights reserved.</p>
+        <ul>
+            <li>&copy; 2026 Dennis Felicia</li>
+        </ul>
     </footer>
-
-    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
 </body>
 
 </html>

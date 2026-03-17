@@ -2,29 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A central hub of course materials and information for CIS236, Math 91, and CIS155.">
-    <meta name="keywords"
-        content="HTML, CSS, JavaScript, CIS236, Math 91, CIS155, Dennis Felicia, course information, web development">
-    <meta name="author" content="Dennis Felicia">
-    <title>Dennis Felicia | Web Developer & Network Enthusiast</title>
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dennis Felicia's Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
-
-<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
-    <i class="fas fa-arrow-up"></i>
-</button>
 
 <body>
     <header class="page-header">
@@ -40,190 +26,93 @@
         </nav>
     </header>
 
-    <script>
-        fetch("about.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("nav-component").innerHTML = data;
-            });
-    </script>
-
     <main class="content">
-        <section>
-            <h2><i class="fas fa-desktop"></i> Open Apps Snapshot</h2>
-            <div class="app-grid">
-                <div class="card"><i class="fas fa-code"></i> Visual Studio Code</div>
-                <div class="card"><i class="fab fa-edge"></i> Microsoft Edge</div>
-                <div class="card"><i class="fas fa-folder-open"></i> Windows Explorer</div>
-                <div class="card"><i class="fas fa-terminal"></i> ShellHost</div>
-                <div class="card"><i class="fas fa-volume-up"></i> Realtek Audio Control</div>
-                <div class="card"><i class="fas fa-cog"></i> Settings</div>
+        <section class="card snapshot-card">
+            <h2><i class="fas fa-desktop"></i> Desktop Snapshot</h2>
+            <p class="snapshot-description">
+                This screenshot shows my actual desktop while working on this project. On the left, <strong>Visual
+                    Studio Code</strong> is open and active — that’s where I write and refine my HTML and CSS. On the
+                right, <strong>Microsoft Edge</strong> displays a live preview of my site. Supporting apps like
+                <strong>ShellHost</strong>, multiple <strong>Windows Explorer</strong> windows, <strong>Realtek Audio
+                    Control</strong>, and <strong>Settings</strong> are open in the background to help me manage files
+                and system preferences.
+            </p>
+
+            <div class="snapshot-image-wrapper">
+                <img src="images/desktop-screenshot.png" alt="Dennis's Desktop Screenshot" class="desktop-image" />
             </div>
+
+            <h3>Currently Open Apps</h3>
+            <ul class="app-list">
+                <li><strong>Visual Studio Code</strong> (active window)</li>
+                <li><strong>ShellHost</strong></li>
+                <li><strong>Microsoft Edge</strong></li>
+                <li><strong>Windows Explorer</strong> (5 instances)</li>
+                <li><strong>Realtek Audio Control</strong></li>
+                <li><strong>Settings</strong></li>
+            </ul>
+
+            <p class="snapshot-description">
+                You should use this screenshot as a map to understand where the apps are placed around each other on the
+                screen, and to understand operating system components not visible in app screenshots — like the taskbar,
+                terminal, and workspace layout — which play a key role in how I build and preview my site.
+            </p>
         </section>
 
-        <div class="table-container">
-            <table class="app-table">
-                <thead>
-                    <tr>
-                        <th>App Name</th>
-                        <th>Function</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Microsoft Edge</td>
-                        <td>Web browsing</td>
-                        <td>Foreground</td>
-                    </tr>
-                    <tr>
-                        <td>Visual Studio Code</td>
-                        <td>Code editing</td>
-                        <td>Background</td>
-                    </tr>
-                    <tr>
-                        <td>ShellHost</td>
-                        <td>System shell process</td>
-                        <td>Running</td>
-                    </tr>
-                    <tr>
-                        <td>Windows Explorer (x3)</td>
-                        <td>File management</td>
-                        <td>Open (3 windows)</td>
-                    </tr>
-                    <tr>
-                        <td>Realtek Audio Control</td>
-                        <td>Audio settings</td>
-                        <td>Open</td>
-                    </tr>
-                    <tr>
-                        <td>Settings</td>
-                        <td>System configuration</td>
-                        <td>Open</td>
-                    </tr>
-                    <tr>
-                        <td>Nahimic</td>
-                        <td>Audio enhancement</td>
-                        <td>Open</td>
-                    </tr>
-                    <img src="about-icon.png" alt="About icon" class="section-icon">
-                    <h2><i class="fas fa-user"></i> About</h2>
-                </tbody>
-            </table>
-        </div>
-        <section>
+        <section class="card">
+            <img src="images/about-icon.png" alt="About icon" class="section-icon">
             <h2><i class="fas fa-user-circle"></i> About Me</h2>
             <p>Hello! I'm Dennis Felicia, a student passionate about web development and programming. I enjoy
                 customizing layouts, refining site structure, and learning new design techniques.</p>
         </section>
 
         <section class="card">
-            <img src="course-icon.png" alt="Course Hub icon" class="section-icon">
+            <img src="images/course-icon.png" alt="Course Hub icon" class="section-icon">
             <h2><i class="fas fa-book"></i> Course Hub</h2>
-            <p>Explore course materials, assignments, and helpful resources...</p>
+            <p>Explore course materials, assignments, and helpful resources to support your learning journey.</p>
         </section>
 
         <section class="card">
-            <h2><i class="fas fa-book"></i> Course Hub</h2>
-            <ul>
-                <li><a href="#">CIS236</a></li>
-                <li><a href="#">Math 91</a></li>
-                <li><a href="#">CIS155</a></li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <img src="resources-icon.png" alt="Resources icon" class="section-icon">
-            <h2><i class="fas fa-tools"></i> Resources</h2>
-            <p>Find links to tutorials, documentation, and learning platforms...</p>
-        </section>
-
-        <section class="card">
-            <img src="contact-icon.png" alt="Contact icon" class="section-icon">
-            <h2><i class="fas fa-envelope"></i> Contact</h2>
-            <p>Reach out via email or social media...</p>
-        </section>
-
-        <section class="card">
+            <img src="images/projects-icon.png" alt="Projects icon" class="section-icon">
             <h2><i class="fas fa-code"></i> Projects</h2>
+            <p>View my completed web projects and demos showcasing HTML, CSS, and JavaScript skills.</p>
+        </section>
+
+        <section class="card">
+            <img src="images/updates-icon.png" alt="Updates icon" class="section-icon">
+            <h2><i class="fas fa-sync-alt"></i> Updates</h2>
+            <p>Check out the latest changes, improvements, and feedback incorporated into this final project.</p>
+        </section>
+
+        <section class="card">
+            <img src="images/resources-icon.png" alt="Resources icon" class="section-icon">
+            <h2><i class="fas fa-tools"></i> Resources</h2>
+            <p>Helpful links and tools for web development:</p>
             <ul>
-                <li><a href="#">JavaScript Form Validator</a></li>
-                <li><a href="#">Simple Portfolio</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+                <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></li>
+                <li><a href="https://colorhunt.co/" target="_blank">Color Hunt</a></li>
+                <li><a href="https://www.adobe.com/products/color.html" target="_blank">Adobe Color</a></li>
             </ul>
         </section>
 
         <section class="card">
-            <h2><i class="fas fa-link"></i> Resources</h2>
-            <ul>
-                <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
-                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h2><i class="fas fa-desktop"></i> Desktop Snapshot</h2>
-            <p class="snapshot-description">
-                This screenshot captures my actual desktop setup while working on this project. On the left,
-                <strong>Visual Studio Code</strong> is open and active — that’s where I write and refine my HTML and
-                CSS. On the right, <strong>Microsoft Edge</strong> displays a live preview of my site. Supporting apps
-                like <strong>ShellHost</strong>, multiple <strong>Windows Explorer</strong> windows, <strong>Realtek
-                    Audio Control</strong>, and <strong>Settings</strong> are open in the background to help me manage
-                files and system preferences.
-            </p>
-            <img src="images/desktop-screenshot.png" alt="Dennis's Desktop Screenshot" class="desktop-image" />
-            <h3>Currently Open Apps</h3>
-            <ul>
-                <li><strong>Visual Studio Code</strong> (active window)</li>
-                <li><strong>Microsoft Edge</strong></li>
-                <li><strong>ShellHost</strong></li>
-                <li><strong>Windows Explorer</strong> (5 instances)</li>
-                <li><strong>Realtek Audio Control</strong></li>
-                <li><strong>Settings</strong></li>
-            </ul>
-            <p class="snapshot-description">
-                You can use this screenshot as a visual map to understand how these apps are arranged around each other
-                on the screen. It also gives insight into system components that aren’t visible in app windows — like
-                the taskbar, terminal, and workspace layout — which play a key role in how I build and preview my site.
-            </p>
+            <img src="images/contact-icon.png" alt="Contact icon" class="section-icon">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>If you'd like to connect or ask questions, feel free to reach out via email or GitHub.</p>
         </section>
     </main>
-    <main class="content">
-        <section id="course-overview">
-            <h2>Welcome to my Course Hub!</h2>
-            <p>This site is dedicated to organizing and showcasing the materials, projects, and share what I'm learning
-                in web development, programming, and related field.</p>
-            <p>Navigate through the site using the links above to find specific course information, projects examples,
-                and more.</p>
-        </section>
-
-        <section id="project-links">
-            <h2>My Projects</h2>
-            <p>Here are some of the projects I've been working on:</p>
-            <ul>
-                <li><a href="project1/index.html">My First Project: A Simple Portfolio</a></li>
-                <li><a href="project2/index.html">Interactive Form</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <aside class="sidebar-right">
-        <h2>Resources & Links</h2>
-        <p>Helpful resources for my studies:</p>
-        <ul>
-            <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
-            <li><a href="https://wwww.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-            <li><a href="https://validator.w3.org/" target="_blank">W3C validator</a></li>
-            <li><a href="https://colorhunt.co/" target="_blank">Color Hunt (Color Palettes)</a></li>
-            <li><a href="https://www.adobe.com/products/color.html" target="_blank">Adobe Color</a></li>
-        </ul>
-    </aside>
 
     <footer>
-        <img height="100" src="https://cdn.wallpapersafari.com/46/51/01wsum.jpg" alt="Golf Image">
+        <img src="https://cdn.wallpapersafari.com/46/51/01wsum.jpg" alt="Golf Image" class="footer-image" />
         <ul>
-            <li>Dennis L. Felicia | 26 Jan 2026</li>
-            <li>Copyright &copy; 2026</li>
+            <li>Dennis L. Felicia | 26 Jan</li>
+            <li>&copy; 2026 Dennis Felicia</li>
         </ul>
     </footer>
+
+    <button id="backToTopBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
     <script src="script.js" defer></script>
 </body>
 

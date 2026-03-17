@@ -3,61 +3,35 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <meta name="description" content="Page 2 of Dennis Felicia's course hub website." />
-    <meta name="keywords" content="HTML, CSS, Flexbox, Grid, Page 2, Dennis Felicia" />
-    <meta name="author" content="Dennis Felicia" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body>
     <header class="page-header">
-        <h1><i class="fas fa-layer-group"></i> Page 2</h1>
+        <h1><i class="fas fa-file-alt"></i> Page 2</h1>
         <nav class="nav-bar">
             <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="Page2.html"><i class="fas fa-file-alt"></i> Page 2</a></li>
-                <li><a href="Page3.html"><i class="fas fa-book"></i> Page 3</a></li>
-                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i> Google</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Page2.html">Page 2</a></li>
+                <li><a href="Page3.html">Page 3</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="content">
-        <section class="app-grid">
-            <div class="card">
-                <h2><i class="fas fa-columns"></i> Flexbox Example</h2>
-                <p>This card demonstrates a flex layout inside a grid cell.</p>
-            </div>
-            <div class="card">
-                <h2><i class="fas fa-expand-arrows-alt"></i> Responsive Design</h2>
-                <p>Resize the browser to see how the layout adapts across screen sizes.</p>
-            </div>
-            <div class="card">
-                <h2><i class="fas fa-lightbulb"></i> Course Insight</h2>
-                <p>Learn how CIS236 applies layout strategies in real-world web development.</p>
-            </div>
+        <section class="card">
+            <h2><i class="fas fa-info-circle"></i> Project Overview</h2>
+            <p>This page provides a deeper look into the structure and goals of my final web project.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Dennis Felicia. All rights reserved.</p>
+        <ul>
+            <li>&copy; 2026 Dennis Felicia</li>
+        </ul>
     </footer>
-
-    <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
 </body>
 
 </html>
