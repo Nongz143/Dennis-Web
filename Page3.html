@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
-    <title>Page 3</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Dennis Felicia</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header class="page-header">
-        <h1><i class="fas fa-book"></i> Page 3</h1>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Page2.html">Page 2</a></li>
-                <li><a href="Page3.html">Page 3</a></li>
-                <li><a href="about.html">About</a></li>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold text-blue-900">Dennis Felicia</h1>
+            <ul class="flex space-x-6 text-sm font-semibold">
+                <li><a href="index.html" class="hover:text-blue-700">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-700">About</a></li>
+                <li><a href="Page2.html" class="hover:text-blue-700">Courses</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="content">
-        <section class="card snapshot-card">
-            <h2><i class="fas fa-desktop"></i> Desktop Snapshot</h2>
-            <p class="snapshot-description">
-                This screenshot shows my actual desktop while working on this project. Visual Studio Code is open and
-                active, with Microsoft Edge previewing my site. Other apps like ShellHost, Windows Explorer (5
-                instances), Realtek Audio Control, and Settings are open in the background.
-            </p>
-            <div class="snapshot-image-wrapper">
-                <img src="images/desktop-screenshot.png" alt="Dennis's Desktop Screenshot" class="desktop-image" />
+    <main class="max-w-4xl mx-auto p-8">
+        <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+        <form class="space-y-4">
+            <div>
+                <label for="name" class="block font-semibold">Name</label>
+                <input type="text" id="name" class="w-full border px-4 py-2 rounded" />
             </div>
-            <h3>Currently Open Apps</h3>
-            <ul class="app-list">
-                <li><strong>Visual Studio Code</strong> (active window)</li>
-                <li><strong>ShellHost</strong></li>
-                <li><strong>Microsoft Edge</strong></li>
-                <li><strong>Windows Explorer</strong> (5 instances)</li>
-                <li><strong>Realtek Audio Control</strong></li>
-                <li><strong>Settings</strong></li>
-            </ul>
-        </section>
+            <div>
+                <label for="email" class="block font-semibold">Email</label>
+                <input type="email" id="email" class="w-full border px-4 py-2 rounded" />
+            </div>
+            <div>
+                <label for="message" class="block font-semibold">Message</label>
+                <textarea id="message" rows="4" class="w-full border px-4 py-2 rounded"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
+        </form>
     </main>
-
-    <footer>
-        <ul>
-            <li>&copy; 2026 Dennis Felicia</li>
-        </ul>
-    </footer>
 </body>
 
 </html>

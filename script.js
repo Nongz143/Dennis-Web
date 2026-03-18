@@ -1,31 +1,18 @@
-const backToTopBtn = document.getElementById("backToTopBtn");
-
-window.addEventListener("scroll", function () {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollTop > 100) {
-        backToTopBtn.classList.add("show");
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
     } else {
-        backToTopBtn.classList.remove("show");
+        backToTop.style.display = 'none';
     }
 });
 
-function highlightApp(button) {
-    const allButtons = document.querySelectorAll(".app-buttons button");
-    allButtons.forEach(btn => btn.classList.remove("active"));
-
-    button.classList.add("active");
-}
-
-backToTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
     });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const header = document.querySelector("h1");
-    if (header) {
-        header.classList.add("fade-in");
-    }
 });

@@ -1,124 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dennis Felicia's Website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Dennis Felicia / Final Web Project - Developer Portfolio" />
+    <title>Dennis Felicia / Final Web Project</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header class="page-header">
-        <h1><i class="fas fa-rocket" aria-label="Site Logo"></i> Dennis Felicia's Website</h1>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="Page2.html"><i class="fas fa-file-alt"></i> Page 2</a></li>
-                <li><a href="Page3.html"><i class="fas fa-book"></i> Page 3</a></li>
-                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i> Google</a></li>
+<body class="bg-white text-gray-800">
+
+    <header class="fixed top-0 w-full bg-white shadow z-50">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold text-blue-900">Dennis Felicia</h1>
+            <ul class="flex space-x-6 text-sm font-semibold">
+                <li><a href="#about" class="hover:text-blue-700">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-700">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-700">Projects</a></li>
+                <li><a href="#education" class="hover:text-blue-700">Education</a></li>
+                <li><a href="#experience" class="hover:text-blue-700">Experience</a></li>
+                <li><a href="#contact" class="hover:text-blue-700">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="content">
-        <section class="card snapshot-card">
-            <img src="updates-icon.png" alt="Snapshot icon" class="section-icon">
-            <h2><i class="fas fa-desktop"></i> Desktop Snapshot</h2>
-            <p class="snapshot-description">
-                This screenshot shows my actual desktop while working on this project. On the left, <strong>Visual
-                    Studio Code</strong> is open and active — that’s where I write and refine my HTML and CSS files. On
-                the right, <strong>Microsoft Edge</strong> displays a live preview of my site. Supporting apps like
-                <strong>ShellHost</strong>, five instances of <strong>Windows Explorer</strong>, <strong>Realtek Audio
-                    Control</strong>, and <strong>Settings</strong> are open in the background to help me manage files,
-                monitor system preferences, and navigate my workspace efficiently.
-            </p>
+    <main class="pt-24">
 
-            <div class="snapshot-image-wrapper">
-                <img src="Desktop.webp" alt="Dennis's Desktop Screenshot" class="desktop-image" />
-                <figcaption class="caption">Live development environment: Visual Studio Code + Microsoft Edge
-                </figcaption>
+        <section class="text-center py-20 bg-blue-900 text-white">
+            <h2 class="text-5xl font-bold mb-4">Dennis Felicia</h2>
+            <p class="text-lg mb-6">Developer | Designer | Problem Solver</p>
+            <a href="#projects"
+                class="bg-white text-blue-900 px-6 py-2 rounded shadow hover:bg-gray-100 transition">View My Work</a>
+        </section>
+
+        <section id="about" class="max-w-4xl mx-auto p-8">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <img src="img/personal-photo.jpg" alt="Dennis Felicia" class="w-32 h-32 rounded-full object-cover" />
+                <p class="text-lg">Hi! I'm Dennis, a passionate web developer who thrives on refining layouts,
+                    customizing site structure, and learning new design techniques. I enjoy building responsive,
+                    accessible websites that feel polished and professional.</p>
             </div>
+        </section>
 
-            <h3>Currently Open Apps</h3>
-            <div class="app-buttons">
-                <button onclick="highlightApp(this)">Visual Studio Code</button>
-                <button onclick="highlightApp(this)">Microsoft Edge</button>
-                <button onclick="highlightApp(this)">ShellHost</button>
-                <button onclick="highlightApp(this)">Windows Explorer</button>
-                <button onclick="highlightApp(this)">Realtek Audio Control</button>
-                <button onclick="highlightApp(this)">Settings</button>
+        <section id="skills" class="bg-gray-100 py-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6">Skills & Tools</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">HTML</span>
+                    <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">CSS</span>
+                    <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">JavaScript</span>
+                    <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">Tailwind</span>
+                </div>
             </div>
-
-            <p class="snapshot-description">
-                You can use this screenshot as a visual map to understand how these apps are arranged around each other
-                on the screen. It also reveals key operating system components not visible in app windows — like the
-                taskbar, terminal, and workspace layout — which play a vital role in how I build, preview, and
-                troubleshoot my site.
-            </p>
         </section>
 
-        <section class="card">
-            <img src="about-icon.png" alt="About icon" class="section-icon">
-            <h2><i class="fas fa-user-circle"></i> About Me</h2>
-            <p>Hello! I'm Dennis Felicia, a student passionate about web development and programming. I enjoy
-                customizing layouts, refining site structure, and learning new design techniques.</p>
+        <section id="projects" class="py-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white shadow rounded p-4 transition hover:shadow-lg">
+                        <img src="img/project1-thumb.jpg" alt="Project 1" class="mb-2 rounded" />
+                        <h3 class="text-xl font-semibold">Responsive Portfolio</h3>
+                        <p class="text-gray-600 mb-2">A sleek portfolio site built with Tailwind and semantic HTML.</p>
+                        <a href="#" class="text-blue-600 underline">View Project</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="card">
-            <img src="course-icon.png" alt="Course Hub icon" class="section-icon">
-            <h2><i class="fas fa-book"></i> Course Hub</h2>
-            <p>Explore course materials, assignments, and helpful resources to support your learning journey.</p>
+        <section id="education" class="bg-gray-100 py-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6">Education</h2>
+                <ul class="space-y-4">
+                    <li>
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-semibold">AAS in Web Development</h3>
+                            <p class="text-sm text-gray-600">Olympic College, 2026</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section class="card">
-            <img src="projects-icon.png" alt="Projects icon" class="section-icon">
-            <h2><i class="fas fa-code"></i> Projects</h2>
-            <p>View my completed web projects and demos showcasing HTML, CSS, and JavaScript skills.</p>
+        <section id="experience" class="py-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-6">Experience</h2>
+                <ul class="space-y-4">
+                    <li>
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-semibold">Web Intern</h3>
+                            <p class="text-sm text-gray-600">TechBridge Solutions, Summer 2025</p>
+                            <p>Assisted in building responsive layouts and debugging HTML/CSS issues across multiple
+                                client sites.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section class="card">
-            <img src="updates-icon.png" alt="Updates icon" class="section-icon">
-            <h2><i class="fas fa-sync-alt"></i> Updates</h2>
-            <p>Check out the latest changes, improvements, and feedback incorporated into this final project.</p>
+        <section id="contact" class="bg-blue-900 text-white py-12">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Contact</h2>
+                <p>Email: <a href="mailto:dennisfelicia@student.olympic.edu" class="underline">dennis@example.com</a>
+                </p>
+                <div class="flex justify-center space-x-6 mt-4 text-2xl">
+                    <a href="#"><i class="fab fa-github hover:text-gray-300"></i></a>
+                    <a href="#"><i class="fab fa-linkedin hover:text-gray-300"></i></a>
+                </div>
+            </div>
         </section>
 
-        <section class="card">
-            <img src="resources-icon.png" alt="Resources icon" class="section-icon">
-            <h2><i class="fas fa-tools"></i> Resources</h2>
-            <p>Helpful links and tools for web development:</p>
-            <ul>
-                <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
-                <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
-                <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></li>
-                <li><a href="https://colorhunt.co/" target="_blank">Color Hunt</a></li>
-                <li><a href="https://www.adobe.com/products/color.html" target="_blank">Adobe Color</a></li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <img src="contact-icon.png" alt="Contact icon" class="section-icon">
-            <h2><i class="fas fa-envelope"></i> Contact</h2>
-            <p>If you'd like to connect or ask questions, feel free to reach out via email:
-                dennisfelicia@student.olympic.edu or GitHub.</p>
-        </section>
     </main>
-
     <footer>
         <img src="https://cdn.wallpapersafari.com/46/51/01wsum.jpg" alt="Golf Image" class="footer-image" />
         <ul>
-            <li>Dennis L. Felicia | 26 Jan</li>
+            <li>Dennis L. Felicia | 26 January</li>
             <li>&copy; 2026 Dennis Felicia</li>
         </ul>
     </footer>
-
-    <button id="backToTopBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
-    <script src="script.js" defer></script>
 </body>
 
 </html>
