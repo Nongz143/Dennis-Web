@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desktop Snapshot - Dennis Felicia</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .animate-zoomIn {
+            animation: zoomIn 0.4s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+    <header class="bg-gray-800 shadow">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold text-blue-300">Dennis Felicia</h1>
+            <ul class="flex space-x-6 text-sm font-semibold">
+                <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+                <li><a href="Page2.html" class="hover:text-blue-400">Courses</a></li>
+                <li><a href="Page3.html" class="hover:text-blue-400">Contact</a></li>
+                <li><a href="snapshot.html" class="hover:text-blue-400">Documentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-8">
+
+        <h2 class="text-4xl font-bold mb-4 text-blue-300">Desktop Snapshot</h2>
+        <p class="mb-6 text-lg text-gray-300">
+            This page displays the full screenshot of my development environment during the final build of the CIS155
+            project.
+            Click the image to view it in a lightbox.
+        </p>
+
+        <img src="img/snapshot.png" alt="Desktop Snapshot" id="snapshotImage"
+            class="rounded shadow-lg cursor-pointer hover:opacity-90 transition" />
+
+        <p class="mt-4 italic text-gray-400">
+            Caption: My full development workspace during the final build of the CIS155 project.
+        </p>
+
+    </main>
+
+    <div id="lightbox"
+        class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50 animate-fadeIn">
+        <img id="lightboxImg" class="max-w-4xl rounded shadow-lg animate-zoomIn" />
+    </div>
+
+    <script>
+        const img = document.getElementById('snapshotImage');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+        });
+    </script>
+
+</body>
+
+</html>

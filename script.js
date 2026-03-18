@@ -1,18 +1,29 @@
-const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        backToTop.style.display = 'block';
-    } else {
-        backToTop.style.display = 'none';
+const openBtn = document.getElementById('openSnapshotModal');
+const modal = document.getElementById('snapshotModal');
+
+if (openBtn && modal) {
+    openBtn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    });
+
+    modal.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    });
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && modal && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
     }
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
+const toggle = document.getElementById('darkModeToggle');
+
+if (toggle) {
+    toggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
     });
-});
+}
