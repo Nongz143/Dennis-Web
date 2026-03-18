@@ -11,20 +11,29 @@ if (openBtn && modal) {
         modal.classList.add('hidden');
         modal.classList.remove('flex');
     });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape" && !modal.classList.contains('hidden')) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    });
 }
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === "Escape" && modal && !modal.classList.contains('hidden')) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-    }
-});
+const darkToggle = document.getElementById('darkModeToggle');
+const themeIcon = document.getElementById('themeIcon');
 
-const toggle = document.getElementById('darkModeToggle');
-
-if (toggle) {
-    toggle.addEventListener('click', () => {
+if (darkToggle && themeIcon) {
+    darkToggle.addEventListener('click', () => {
         document.documentElement.classList.toggle('dark');
+
+        if (document.documentElement.classList.contains('dark')) {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun', 'text-yellow-300');
+        } else {
+            themeIcon.classList.remove('fa-sun', 'text-yellow-300');
+            themeIcon.classList.add('fa-moon');
+        }
     });
 }
 
@@ -38,31 +47,20 @@ document.querySelectorAll("nav a").forEach(link => {
 const hamburgerBtn = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
-if (hamburgerBtn) {
+if (hamburgerBtn && navMenu) {
     hamburgerBtn.addEventListener("click", () => {
         navMenu.classList.toggle("hidden");
     });
 }
 
-const toggle = document.getElementById('darkModeToggle');
-const icon = document.getElementById('themeIcon');
+const header = document.querySelector("header");
 
-if (toggle) {
-    toggle.addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark');
-
-        if (document.documentElement.classList.contains('dark')) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun', 'text-yellow-300');
+if (header) {
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+            header.classList.add("shadow-lg", "bg-white/90", "dark:bg-gray-900");
         } else {
-            icon.classList.remove('fa-sun', 'text-yellow-300');
-            icon.classList.add('fa-moon');
+            header.classList.remove("shadow-lg", "bg-white/90", "dark:bg-gray-900");
         }
     });
 }
-
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 10) {
-        header.classList.add("shadow-lg", "bg-white/90", "dark:bg-gray
