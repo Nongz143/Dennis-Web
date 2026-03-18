@@ -10,7 +10,7 @@ The site includes a polished homepage, three subpages, documentation, a snapshot
 ## 🌐 Live Website (GitHub Pages)
 
 **Visit the live site:**  
-https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/
+https://nongz143.github.io/Dennis-Web/
 
 ## 📌 Project Overview
 
