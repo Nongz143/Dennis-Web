@@ -32,22 +32,26 @@
 
 <body class="bg-white text-gray-800">
 
-    <header class="fixed top-0 w-full bg-white shadow z-50">
+    <header class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-50">
         <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
-            <h1 class="text-xl font-bold text-blue-900">Dennis Felicia</h1>
+            <h1 class="text-xl font-bold text-blue-900 dark:text-blue-300">Dennis Felicia</h1>
+            <button id="hamburger" class="md:hidden text-3xl focus:outline-none">
+                ☰
+            </button>
 
             <ul class="flex space-x-6 text-sm font-semibold">
-                <li><a href="#about" class="hover:text-blue-700">About</a></li>
-                <li><a href="#skills" class="hover:text-blue-700">Skills</a></li>
-                <li><a href="#projects" class="hover:text-blue-700">Projects</a></li>
-                <li><a href="#education" class="hover:text-blue-700">Education</a></li>
-                <li><a href="#experience" class="hover:text-blue-700">Experience</a></li>
-                <li><a href="#contact" class="hover:text-blue-700">Contact</a></li>
-                <li><a href="snapshot.html" class="hover:text-blue-700">Documentation</a></li>
+                <ul id="nav-menu" class="hidden md:flex space-x-6 text-sm font-semibold"></ul>
+                <li><a href="index.html" class="hover:text-blue-700 dark:hover:text-blue-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-700 dark:hover:text-blue-400">About</a></li>
+                <li><a href="education.html" class="hover:text-blue-700 dark:hover:text-blue-400">Education</a></li>
+                <li><a href="Page2.html" class="hover:text-blue-700 dark:hover:text-blue-400">Courses</a></li>
+                <li><a href="Page3.html" class="hover:text-blue-700 dark:hover:text-blue-400">Contact</a></li>
+                <li><a href="snapshot.html" class="hover:text-blue-700 dark:hover:text-blue-400">Documentation</a></li>
             </ul>
 
-            <button id="darkModeToggle" class="text-2xl p-2 rounded hover:bg-gray-200 transition">
-                <i id="themeIcon" class="fas fa-moon text-gray-800"></i>
+            <button id="darkModeToggle"
+                class="text-2xl p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                <i id="themeIcon" class="fas fa-moon text-gray-800 dark:text-gray-200"></i>
             </button>
         </nav>
     </header>
@@ -97,17 +101,203 @@
             </div>
         </section>
 
-        <section id="education" class="bg-gray-100 py-12" data-aos="fade-up">
-            <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-6">Education</h2>
-                <ul class="space-y-4">
-                    <li>
-                        <div class="bg-white p-4 rounded shadow">
-                            <h3 class="font-semibold">AAS in Web Development</h3>
-                            <p class="text-sm text-gray-600">Olympic College, 2026</p>
-                        </div>
-                    </li>
-                </ul>
+        <section id="education" class="max-w-6xl mx-auto p-8" data-aos="fade-up">
+
+            <h2 class="text-4xl font-bold mb-6 text-blue-900 dark:text-blue-300">Education</h2>
+
+            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow mb-8" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold text-blue-900 dark:text-blue-300 mb-2">
+                    <i class="fas fa-graduation-cap mr-2"></i> IT Networking AAS‑T Progress
+                </h3>
+
+                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-2">
+                    <div class="bg-green-500 h-2 rounded" style="width: 45%;"></div>
+                </div>
+
+                <p class="text-sm mt-2 text-gray-700 dark:text-gray-300">
+                    45% of degree completed
+                </p>
+
+                <a href="docs/transcript.pdf"
+                    class="inline-block bg-blue-900 text-white px-5 py-2 rounded hover:bg-blue-700 transition mt-4">
+                    Download Transcript (PDF)
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-network-wired"></i> CIS182 – Networking Concepts
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">Networking</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-green-200 dark:bg-green-700 text-green-900 dark:text-green-100 rounded">Protocols</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-desktop"></i> CIS111 – Introduction to Operating Systems
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-purple-200 dark:bg-purple-700 text-purple-900 dark:text-purple-100 rounded">OS</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 rounded">File
+                            Systems</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up" data-aos-delay="150">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-database"></i> CIS100 – Information Systems Concepts
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-yellow-200 dark:bg-yellow-700 text-yellow-900 dark:text-yellow-100 rounded">IS</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">Hardware</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-square-root-alt"></i> MATH91 – Pre‑Algebra
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-red-200 dark:bg-red-700 text-red-900 dark:text-red-100 rounded">Math</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up" data-aos-delay="250">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-shield-alt"></i> CIS236 – Information Systems Security I
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-red-200 dark:bg-red-700 text-red-900 dark:text-red-100 rounded">Security</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 rounded">Threats</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-code"></i> CIS155 – Web Development I
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">HTML</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-green-200 dark:bg-green-700 text-green-900 dark:text-green-100 rounded">CSS</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-purple-200 dark:bg-purple-700 text-purple-900 dark:text-purple-100 rounded">Tailwind</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up" data-aos-delay="350">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-pencil-alt"></i> ENGL 91 – Read/Write in Life & College
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-yellow-200 dark:bg-yellow-700 text-yellow-900 dark:text-yellow-100 rounded">Writing</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">Reading</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-desktop"></i> CIS212 – Windows/Professional
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 rounded">Windows</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-green-200 dark:bg-green-700 text-green-900 dark:text-green-100 rounded">Admin</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
+                <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition"
+                    data-aos="fade-up" data-aos-delay="450">
+                    <h3 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
+                        <i class="fas fa-tools"></i> CIS172 – Technical Support Skills
+                    </h3>
+
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span
+                            class="px-2 py-0.5 text-xs bg-red-200 dark:bg-red-700 text-red-900 dark:text-red-100 rounded">Support</span>
+                        <span
+                            class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">Troubleshooting</span>
+                    </div>
+
+                    <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
+                        <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
+                    </div>
+                    <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                </div>
+
             </div>
         </section>
 
@@ -176,9 +366,6 @@
         class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50 animate-fadeIn">
         <img src="OIP.webp" alt="Desktop Snapshot" class="max-w-4xl rounded shadow-lg animate-zoomIn" />
     </div>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 800, once: true });</script>
 
     <script src="script.js"></script>
 

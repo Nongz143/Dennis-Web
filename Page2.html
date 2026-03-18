@@ -21,19 +21,44 @@
 
     <header class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-50">
         <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+
             <h1 class="text-xl font-bold text-blue-900 dark:text-blue-300">Dennis Felicia</h1>
 
-            <ul class="flex space-x-6 text-sm font-semibold">
+            <button id="hamburger" class="md:hidden text-3xl focus:outline-none">
+                ☰
+            </button>
+
+            <ul id="nav-menu" class="hidden md:flex space-x-6 text-sm font-semibold">
+
                 <li><a href="index.html" class="hover:text-blue-700 dark:hover:text-blue-400">Home</a></li>
                 <li><a href="about.html" class="hover:text-blue-700 dark:hover:text-blue-400">About</a></li>
+                <li><a href="education.html" class="hover:text-blue-700 dark:hover:text-blue-400">Education</a></li>
+                <li><a href="Page2.html" class="hover:text-blue-700 dark:hover:text-blue-400">Courses</a></li>
                 <li><a href="Page3.html" class="hover:text-blue-700 dark:hover:text-blue-400">Contact</a></li>
                 <li><a href="snapshot.html" class="hover:text-blue-700 dark:hover:text-blue-400">Documentation</a></li>
+
+                <li class="relative group">
+                    <button class="hover:text-blue-700 dark:hover:text-blue-400">
+                        More ▼
+                    </button>
+
+                    <ul
+                        class="absolute left-0 mt-2 bg-white dark:bg-gray-800 shadow rounded hidden group-hover:block p-2 space-y-2 w-40">
+                        <li><a href="blog.html" class="block hover:text-blue-700 dark:hover:text-blue-400">Blog</a></li>
+                        <li><a href="gallery.html"
+                                class="block hover:text-blue-700 dark:hover:text-blue-400">Gallery</a></li>
+                        <li><a href="projects.html"
+                                class="block hover:text-blue-700 dark:hover:text-blue-400">Projects</a></li>
+                    </ul>
+                </li>
+
             </ul>
 
             <button id="darkModeToggle"
                 class="text-2xl p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition">
                 <i id="themeIcon" class="fas fa-moon text-gray-800 dark:text-gray-200"></i>
             </button>
+
         </nav>
     </header>
 
@@ -76,25 +101,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 800, once: true });</script>
-
-    <script>
-        const toggle = document.getElementById('darkModeToggle');
-        const icon = document.getElementById('themeIcon');
-
-        toggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-
-            if (document.documentElement.classList.contains('dark')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun', 'text-yellow-300');
-            } else {
-                icon.classList.remove('fa-sun', 'text-yellow-300');
-                icon.classList.add('fa-moon');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
