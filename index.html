@@ -7,6 +7,7 @@
     <meta name="description" content="Dennis Felicia / Final Web Project - Developer Portfolio" />
     <title>Dennis Felicia / Final Web Project</title>
     <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet" />
@@ -39,6 +40,7 @@
                 <li><a href="#experience" class="hover:text-blue-700">Experience</a></li>
                 <li><a href="#contact" class="hover:text-blue-700">Contact</a></li>
                 <li><a href="snapshot.html" class="hover:text-blue-700">Documentation</a></li>
+                <section class="text-center py-20 bg-blue-900 text-white" data-aos="fade-up"></section>
             </ul>
 
             <button id="darkModeToggle"
@@ -50,15 +52,6 @@
 
     <main class="pt-24">
 
-        <button id="openSnapshotModal"
-            class="mt-6 bg-blue-900 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition">
-            View Desktop Snapshot
-        </button>
-
-        <div id="snapshotModal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
-            <img src="OIP.webp" alt="Desktop Snapshot" class="max-w-4xl rounded shadow-lg animate-zoomIn" />
-        </div>
-
         <section class="text-center py-20 bg-blue-900 text-white">
             <h2 class="text-5xl font-bold mb-4">Dennis Felicia</h2>
             <p class="text-lg mb-6">Developer | Designer | Problem Solver</p>
@@ -66,7 +59,7 @@
                 class="bg-white text-blue-900 px-6 py-2 rounded shadow hover:bg-gray-100 transition">View My Work</a>
         </section>
 
-        <section id="about" class="max-w-4xl mx-auto p-8">
+        <section id="about" class="max-w-4xl mx-auto p-8" data-aos="fade-up">
             <h2 class="text-3xl font-bold mb-4">About Me</h2>
             <div class="flex flex-col md:flex-row items-center gap-6">
                 <img src="IMG_ME.JPG" alt="Dennis Felicia" class="w-32 h-32 rounded-full object-cover" />
@@ -76,7 +69,7 @@
             </div>
         </section>
 
-        <section id="skills" class="bg-gray-100 py-12">
+        <section id="skills" class="bg-gray-100 py-12" data-aos="fade-up">
             <div class="max-w-6xl mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-6">Skills & Tools</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -88,7 +81,7 @@
             </div>
         </section>
 
-        <section id="projects" class="py-12">
+        <section id="projects" class="py-12" data-aos="fade-up">
             <div class="max-w-6xl mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-6">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -102,7 +95,7 @@
             </div>
         </section>
 
-        <section id="education" class="bg-gray-100 py-12">
+        <section id="education" class="bg-gray-100 py-12" data-aos="fade-up">
             <div class="max-w-6xl mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-6">Education</h2>
                 <ul class="space-y-4">
@@ -116,7 +109,7 @@
             </div>
         </section>
 
-        <section id="experience" class="py-12">
+        <section id="experience" class="py-12" data-aos="fade-up">
             <div class="max-w-6xl mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-6">Experience</h2>
                 <ul class="space-y-4">
@@ -132,7 +125,7 @@
             </div>
         </section>
 
-        <section id="documentation" class="py-12 bg-gray-100">
+        <section id="documentation" class="py-12 bg-gray-100" data-aos="fade-up">
             <div class="max-w-6xl mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-4">Documentation</h2>
                 <p class="mb-4 text-lg">
@@ -143,11 +136,18 @@
                     <li><a href="README.md" class="underline">Full README Documentation</a></li>
                     <li><a href="snapshot.html" class="underline">Desktop Snapshot Page</a></li>
                     <li><a href="README.md#desktop-snapshot" class="underline">Jump to Snapshot Section</a></li>
+
+                    <div class="mt-8">
+                        <button id="openSnapshotModal"
+                            class="bg-blue-900 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition">
+                            View Desktop Snapshot
+                        </button>
+                    </div>
                 </ul>
             </div>
         </section>
 
-        <section id="contact" class="bg-blue-900 text-white py-12">
+        <section id="contact" class="bg-blue-900 text-white py-12" data-aos="fade-up">
             <div class="max-w-6xl mx-auto px-4 text-center">
                 <h2 class="text-3xl font-bold mb-4">Contact</h2>
                 <p>Email: <a href="mailto:dennisfelicia@student.olympic.edu"
@@ -168,6 +168,19 @@
             <li>&copy; 2026 Dennis Felicia</li>
         </ul>
     </footer>
+
+    <div id="snapshotModal"
+        class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50 animate-fadeIn">
+        <img src="OIP.webp" alt="Desktop Snapshot" class="max-w-4xl rounded shadow-lg animate-zoomIn" />
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 
 </body>
 
