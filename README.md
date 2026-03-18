@@ -43,13 +43,17 @@ Tailwind’s responsive classes (`md:`, `lg:`) were used to adjust layout and sp
 I received helpful feedback from Wendy and Mitchell:
 
 - **Wendy** suggested enlarging the navigation buttons and resizing the icons for better readability.  
-  ✅ I updated the CSS to increase button padding and icon size across all pages.
+  I updated the CSS to increase button padding and icon size across all pages.
 
 - **Mitchell** recommended adding more meaningful content to Page 3 and making the snapshot section responsive.  
-  ✅ I replaced the table with a responsive app list and added a humanized description of my desktop layout.
+  I replaced the table with a responsive app list and added a humanized description of my desktop layout.
+
+🖼️ Desktop Snapshot
+This section illustrates my actual development environment at the time of submission. The screenshot below shows Visual Studio Code as the active application, with multiple tabs open including , , and . Microsoft Edge is visible in the foreground with Copilot open for live feedback. Windows Explorer is open in several instances, along with ShellHost, Realtek Audio Control, Settings, Microsoft Word, and Google Chrome.
+These apps reflect a multitasking setup used to build, preview, and document the final web project. The layout demonstrates how I organized my workspace to manage code, assets, and research simultaneously.
 
 ## 🖼️ Screenshot
-![Project Screenshot](img/project1-thumb.jpg)
+![Project Screenshot](download.webp)
 
 ## Final Thoughts
 
