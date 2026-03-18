@@ -1,63 +1,170 @@
 Hello All!
 
-# Dennis Felicia – Final Web Project
+# Dennis Felicia — Final Web Project (CIS155)
 
-## 📄 Project Overview
-This multi-page portfolio was built for CIS155 to demonstrate my skills in semantic HTML, responsive design, accessibility, and Tailwind CSS. It includes a polished layout, consistent navigation, and custom styling.
+This project is my final submission for **CIS155 – Web Development**.  
+It demonstrates my ability to build a **fully responsive, accessible, multi‑page website** using semantic HTML, Tailwind CSS, animations, dark mode, and modern usability conventions.
 
-## 🔗 Live Site
-[View on GitHub Pages](https://nongz143.github.io/Dennis-Web/)
+The site includes a polished homepage, three subpages, documentation, a snapshot page, and a consistent design system across all pages.
 
-## 🧰 Technologies Used
-- HTML5 (Semantic Structure)
-- Tailwind CSS (via CDN)
-- Google Fonts (Playfair Display & Inter)
-- FontAwesome Icons
-- JavaScript (Minimal Interactivity)
+## 🌐 Live Website (GitHub Pages)
 
-## 📐 Layout & Design
-- Used Tailwind utility classes for layout, spacing, and typography.
-- Applied Google Fonts for elegant headings and readable body text.
-- Included a sticky navigation bar and smooth scrolling.
-- Each page is responsive and mobile-friendly.
+**Visit the live site:**  
+https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/
 
-## 🧠 Challenges & Solutions
-- **Challenge:** Structuring multiple pages with consistent navigation.
-  - **Solution:** Created a shared header layout and reused Tailwind classes.
-- **Challenge:** Making the layout responsive across devices.
-  - **Solution:** Used Tailwind’s grid and flex utilities with media breakpoints.
+## 📌 Project Overview
 
-## 🧪 Grid & Flexbox Usage
-- Grid used for project cards and skills layout.
-- Flexbox used for navigation bar and about section alignment.
+This website was built to showcase my understanding of:
 
-## 📱 Media Queries
-Tailwind’s responsive classes (`md:`, `lg:`) were used to adjust layout and spacing across screen sizes.
+- Semantic HTML  
+- Responsive Web Design (RWD)  
+- Tailwind CSS utility‑first styling  
+- Accessibility best practices  
+- Multi‑page navigation  
+- Animations and interactivity  
+- Dark mode implementation  
+- Clean file organization and documentation  
 
-## 🧑‍🤝‍🧑 Peer Feedback
+The site includes:
 
-- Added more spacing between sections for readability.
-- Improved contrast for accessibility.
-- Included alt text for all images.
+- A homepage with hero section, skills, projects, education, experience, documentation links, and contact section  
+- Three subpages: **About**, **Courses**, and **Contact**  
+- A **Snapshot** page showing my development environment  
+- A consistent navigation bar and footer across all pages  
+- A dark/light mode toggle  
+- Scroll animations using AOS  
 
-I received helpful feedback from Wendy and Mitchell:
+## ✨ Features
 
-- **Wendy** suggested enlarging the navigation buttons and resizing the icons for better readability.  
-  I updated the CSS to increase button padding and icon size across all pages.
+### ✔ Responsive Layout  
+The entire site adapts to mobile, tablet, and desktop screen sizes using Tailwind’s responsive utilities.
 
-- **Mitchell** recommended adding more meaningful content to Page 3 and making the snapshot section responsive.  
-  I replaced the table with a responsive app list and added a humanized description of my desktop layout.
+### ✔ Semantic HTML  
+Sections are structured using `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, and proper heading hierarchy.
 
-🖼️ Desktop Snapshot
-This section illustrates my actual development environment at the time of submission. The screenshot below shows Visual Studio Code as the active application, with multiple tabs open including , , and . Microsoft Edge is visible in the foreground with Copilot open for live feedback. Windows Explorer is open in several instances, along with ShellHost, Realtek Audio Control, Settings, Microsoft Word, and Google Chrome.
-These apps reflect a multitasking setup used to build, preview, and document the final web project. The layout demonstrates how I organized my workspace to manage code, assets, and research simultaneously.
+### ✔ Dark Mode  
+A custom JavaScript toggle switches between light and dark themes using Tailwind’s `dark:` classes.
 
-## 🖼️ Screenshot
-![Project Screenshot](download.webp)
+### ✔ Scroll Animations  
+AOS (Animate On Scroll) adds fade‑up and zoom‑in animations throughout the site.
+
+### ✔ Modal & Lightbox  
+The homepage includes a modal, and the snapshot page includes a lightbox for viewing the screenshot.
+
+### ✔ Accessibility  
+- All images include `alt` attributes  
+- High‑contrast color palette  
+- Keyboard‑visible focus states  
+- Legible fonts and sizes  
+- Semantic structure for screen readers  
+
+### ✔ Consistent Navigation  
+Every page includes the same navigation bar and footer for a unified user experience.
+
+---
+
+## 🛠 Technologies Used
+
+- **HTML5**  
+- **CSS3**  
+- **Tailwind CSS**  
+- **JavaScript (ES6)**  
+- **AOS Animation Library**  
+- **Google Fonts (Inter & Playfair Display)**  
+- **Font Awesome Icons**  
+- **GitHub Pages** for hosting  
+
+---
+
+## 📁 File Structure
+project-folder/ │ ├── index.html ├── about.html ├── Page2.html ├── Page3.html ├── snapshot.html │ ├── css/ │   └── style.css │ ├── img/ │   ├── snapshot.png │   ├── IMG_ME.JPG │   └── other images... │ ├── script.js └── README.md
+
+---
+
+## 🧭 Navigation Guide
+
+The navigation bar links to:
+
+- **Home** – index.html  
+- **About** – about.html  
+- **Courses** – Page2.html  
+- **Contact** – Page3.html  
+- **Documentation** – snapshot.html + README.md  
+
+All pages include the same header and footer for consistency.
+
+---
+
+## 🖼 Desktop Snapshot
+
+A full screenshot of my development environment is included on:
+
+- **snapshot.html**  
+- **README.md (this file)**  
+
+### Snapshot Preview  
+*(Displayed on the snapshot page using a lightbox modal)*
+
+---
+
+## 👥 Peer Feedback & Improvements
+
+### Feedback from Wendy  
+**Suggestion:** Improve spacing and alignment on the homepage.  
+**Action Taken:** Adjusted padding, centered content, and improved layout using Tailwind utilities.
+
+### Feedback from Mitchell  
+**Suggestion:** Add more interactivity and polish.  
+**Action Taken:** Added dark mode toggle, scroll animations, hover effects, and a modal/lightbox.
+
+### Additional Improvements  
+- Reorganized CSS with comments  
+- Ensured consistent navigation across all pages  
+- Added accessibility focus states  
+- Improved color contrast for readability  
+
+---
+
+## ♿ Accessibility Features
+
+- Alt text for all images  
+- High‑contrast dark mode  
+- Keyboard‑visible focus outlines  
+- Semantic HTML structure  
+- Legible font sizes and spacing  
+
+---
+
+## 📱 Responsive Design Notes
+
+The site uses Tailwind’s responsive classes such as:
+
+- `md:grid-cols-2`  
+- `md:flex-row`  
+- `max-w-*` containers  
+- `p-*` and `m-*` spacing utilities  
+
+This ensures the layout adapts smoothly to all screen sizes.
+
+---
+
+## 🙌 Credits
+
+- **Developer:** Dennis L. Felicia  
+- **Course:** CIS155 – Web Development  
+- **Instructor:** (Add instructor name if required)  
+- **Libraries:** Tailwind CSS, AOS, Font Awesome  
+- **Hosting:** GitHub Pages  
+
+---
 
 ## Final Thoughts
 
-This project helped me understand how layout strategies affect usability and presentation. I learned how to debug HTML/CSS, apply peer feedback, and polish a site for professional submission.
+This project represents my growth as a web developer.  
+I focused on clarity, usability, accessibility, and modern design principles to create a polished, professional website. It helped me understand how layout strategies affect usability and presentation. I learned how to debug HTML/CSS, apply peer feedback, and polish a site for professional submission.
+
+Thank you for reviewing my work!
+
 
 © 2026 Dennis Felicia. All rights reserved.
 
