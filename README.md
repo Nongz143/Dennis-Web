@@ -2,7 +2,7 @@ Hello All!
 
 # Dennis Felicia — Final Web Project (CIS155)
 
-This project is my final submission for **CIS155 – Web Development**.  
+This project is my final submission for **CIS155 – Web Development I**.  
 It demonstrates my ability to build a **fully responsive, accessible, multi‑page website** using semantic HTML, Tailwind CSS, animations, dark mode, and modern usability conventions.
 
 The site includes a polished homepage, three subpages, documentation, a snapshot page, and a consistent design system across all pages.
@@ -10,7 +10,7 @@ The site includes a polished homepage, three subpages, documentation, a snapshot
 ## 🌐 Live Website (GitHub Pages)
 
 **Visit the live site:**  
-https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/
+https://nongz143.github.io/Dennis-Web/
 
 ## 📌 Project Overview
 
@@ -36,29 +36,29 @@ The site includes:
 
 ## ✨ Features
 
-### ✔ Responsive Layout  
+### Responsive Layout  
 The entire site adapts to mobile, tablet, and desktop screen sizes using Tailwind’s responsive utilities.
 
-### ✔ Semantic HTML  
+### Semantic HTML  
 Sections are structured using `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, and proper heading hierarchy.
 
-### ✔ Dark Mode  
+### Dark Mode  
 A custom JavaScript toggle switches between light and dark themes using Tailwind’s `dark:` classes.
 
-### ✔ Scroll Animations  
+### Scroll Animations  
 AOS (Animate On Scroll) adds fade‑up and zoom‑in animations throughout the site.
 
-### ✔ Modal & Lightbox  
+### Modal & Lightbox  
 The homepage includes a modal, and the snapshot page includes a lightbox for viewing the screenshot.
 
-### ✔ Accessibility  
+### Accessibility  
 - All images include `alt` attributes  
 - High‑contrast color palette  
 - Keyboard‑visible focus states  
 - Legible fonts and sizes  
 - Semantic structure for screen readers  
 
-### ✔ Consistent Navigation  
+### Consistent Navigation  
 Every page includes the same navigation bar and footer for a unified user experience.
 
 ---
@@ -151,8 +151,8 @@ This ensures the layout adapts smoothly to all screen sizes.
 ## 🙌 Credits
 
 - **Developer:** Dennis L. Felicia  
-- **Course:** CIS155 – Web Development  
-- **Instructor:** (Add instructor name if required)  
+- **Course:** CIS155 – Web Development I 
+- **Instructor:** Prof. Javaris Taylor  
 - **Libraries:** Tailwind CSS, AOS, Font Awesome  
 - **Hosting:** GitHub Pages  
 
