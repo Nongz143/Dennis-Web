@@ -1,33 +1,35 @@
-const openBtn = document.getElementById('openSnapshotModal');
-const modal = document.getElementById('snapshotModal');
+const snapshotOpenBtn = document.getElementById('openSnapshotModal');
+const snapshotModal = document.getElementById('snapshotModal');
 
-if (openBtn && modal) {
-    openBtn.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
+if (snapshotOpenBtn && snapshotModal) {
+    snapshotOpenBtn.addEventListener('click', () => {
+        snapshotModal.classList.remove('hidden');
+        snapshotModal.classList.add('flex');
     });
 
-    modal.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+    snapshotModal.addEventListener('click', () => {
+        snapshotModal.classList.add('hidden');
+        snapshotModal.classList.remove('flex');
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === "Escape" && !modal.classList.contains('hidden')) {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
+        if (e.key === 'Escape' && !snapshotModal.classList.contains('hidden')) {
+            snapshotModal.classList.add('hidden');
+            snapshotModal.classList.remove('flex');
         }
     });
 }
 
-const darkToggle = document.getElementById('darkModeToggle');
+const darkModeToggle = document.getElementById('darkModeToggle');
 const themeIcon = document.getElementById('themeIcon');
 
-if (darkToggle && themeIcon) {
-    darkToggle.addEventListener('click', () => {
+if (darkModeToggle && themeIcon) {
+    darkModeToggle.addEventListener('click', () => {
         document.documentElement.classList.toggle('dark');
 
-        if (document.documentElement.classList.contains('dark')) {
+        const isDark = document.documentElement.classList.contains('dark');
+
+        if (isDark) {
             themeIcon.classList.remove('fa-moon');
             themeIcon.classList.add('fa-sun', 'text-yellow-300');
         } else {
@@ -37,30 +39,39 @@ if (darkToggle && themeIcon) {
     });
 }
 
-const currentPage = window.location.pathname.split("/").pop();
-document.querySelectorAll("nav a").forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-        link.classList.add("nav-active");
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+document.querySelectorAll('nav a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage) {
+        link.classList.add('nav-active');
     }
 });
 
-const hamburgerBtn = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav-menu");
+const hamburgerBtn = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
 
 if (hamburgerBtn && navMenu) {
-    hamburgerBtn.addEventListener("click", () => {
-        navMenu.classList.toggle("hidden");
+    hamburgerBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
     });
-}
 
-const header = document.querySelector("header");
-
-if (header) {
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 10) {
-            header.classList.add("shadow-lg", "bg-white/90", "dark:bg-gray-900");
-        } else {
-            header.classList.remove("shadow-lg", "bg-white/90", "dark:bg-gray-900");
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !navMenu.classList.contains('hidden')) {
+            navMenu.classList.add('hidden');
         }
     });
 }
+
+const header = document.querySelector('header');
+
+if (header) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            header.classList.add('shadow-lg', 'bg-white/90', 'dark:bg-gray-900');
+        } else {
+            header.classList.remove('shadow-lg', 'bg-white/90', 'dark:bg-gray-900');
+        }
+    });
+}
+
