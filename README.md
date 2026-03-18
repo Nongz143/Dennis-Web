@@ -36,29 +36,29 @@ The site includes:
 
 ## ✨ Features
 
-### ✔ Responsive Layout  
+### Responsive Layout  
 The entire site adapts to mobile, tablet, and desktop screen sizes using Tailwind’s responsive utilities.
 
-### ✔ Semantic HTML  
+### Semantic HTML  
 Sections are structured using `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, and proper heading hierarchy.
 
-### ✔ Dark Mode  
+### Dark Mode  
 A custom JavaScript toggle switches between light and dark themes using Tailwind’s `dark:` classes.
 
-### ✔ Scroll Animations  
+### Scroll Animations  
 AOS (Animate On Scroll) adds fade‑up and zoom‑in animations throughout the site.
 
-### ✔ Modal & Lightbox  
+### Modal & Lightbox  
 The homepage includes a modal, and the snapshot page includes a lightbox for viewing the screenshot.
 
-### ✔ Accessibility  
+### Accessibility  
 - All images include `alt` attributes  
 - High‑contrast color palette  
 - Keyboard‑visible focus states  
 - Legible fonts and sizes  
 - Semantic structure for screen readers  
 
-### ✔ Consistent Navigation  
+### Consistent Navigation  
 Every page includes the same navigation bar and footer for a unified user experience.
 
 ---
