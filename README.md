@@ -2,7 +2,7 @@ Hello All!
 
 # Dennis Felicia — Final Web Project (CIS155)
 
-This project is my final submission for **CIS155 – Web Development**.  
+This project is my final submission for **CIS155 – Web Development I**.  
 It demonstrates my ability to build a **fully responsive, accessible, multi‑page website** using semantic HTML, Tailwind CSS, animations, dark mode, and modern usability conventions.
 
 The site includes a polished homepage, three subpages, documentation, a snapshot page, and a consistent design system across all pages.
@@ -151,8 +151,8 @@ This ensures the layout adapts smoothly to all screen sizes.
 ## 🙌 Credits
 
 - **Developer:** Dennis L. Felicia  
-- **Course:** CIS155 – Web Development  
-- **Instructor:** (Add instructor name if required)  
+- **Course:** CIS155 – Web Development I 
+- **Instructor:** Prof. Javaris Taylor  
 - **Libraries:** Tailwind CSS, AOS, Font Awesome  
 - **Hosting:** GitHub Pages  
 
