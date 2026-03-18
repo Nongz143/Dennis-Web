@@ -66,6 +66,13 @@ body {
     max-width: 960px;
 }
 
+.content {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
 .card i {
     font-size: 1rem;
     margin-right: 0.4rem;
@@ -78,6 +85,13 @@ body {
 
 .snapshot-card {
     margin-bottom: 2rem;
+}
+
+.snapshot-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
 .snapshot-description {
