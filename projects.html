@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Projects by Dennis Felicia – Elegant, responsive web development work and UI engineering." />
+        content="Projects by Dennis Felicia – A curated selection of responsive, accessible, and thoughtfully engineered web work." />
     <title>Projects – Dennis Felicia</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,22 +15,22 @@
         rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="page-transition">
 
-    <body class="page-transition"></body>
     <header class="site-header">
         <div class="container">
             <nav class="site-nav">
+
                 <a href="index.html" class="brand">
                     <div class="brand-mark">DF</div>
                     <span class="brand-name">Dennis Felicia</span>
                 </a>
 
                 <div class="flex items-center gap-4">
+
                     <ul class="nav-links hidden md:flex">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="projects.html">Projects</a></li>
@@ -44,8 +44,22 @@
                         <span id="themeIcon">🌙</span>
                         <span class="hidden sm:inline text-[0.7rem]">Theme</span>
                     </button>
+
+                    <button id="mobileMenuBtn" class="hamburger md:hidden" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
+
                 </div>
             </nav>
+        </div>
+
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
         </div>
     </header>
 
@@ -55,8 +69,8 @@
             <div class="container reveal">
                 <h1 class="hero-title">Projects & Work</h1>
                 <p class="hero-tagline">
-                    A curated selection of projects that highlight my approach to structure, responsiveness,
-                    accessibility, and developer‑friendly code.
+                    A curated selection of work that highlights my approach to structure, responsiveness, accessibility,
+                    and clean UI engineering.
                 </p>
             </div>
         </section>
@@ -72,14 +86,15 @@
 
                         <h3 class="card-title">Responsive Portfolio Layout</h3>
                         <p class="section-intro mt-2">
-                            A fully responsive, single‑page portfolio with smooth scrolling, sticky navigation, and a
-                            bento‑style project grid.
+                            A fully responsive, multi‑page portfolio built with semantic HTML, a custom CSS design
+                            system, and smooth page transitions.
                         </p>
 
                         <div class="tag-row mt-3">
                             <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
                             <span class="tag">Tailwind</span>
-                            <span class="tag">Accessibility</span>
+                            <span class="tag">JavaScript</span>
                         </div>
 
                         <a href="#" class="btn-outline mt-4 inline-flex">
@@ -94,8 +109,8 @@
 
                         <h3 class="card-title">Accessible Component Library</h3>
                         <p class="section-intro mt-2">
-                            A small library of reusable UI components with keyboard navigation, focus states, and clear
-                            documentation.
+                            A small library of reusable UI components designed with accessibility in mind. Includes
+                            buttons, cards, navigation patterns, and form elements.
                         </p>
 
                         <div class="tag-row mt-3">
@@ -137,48 +152,9 @@
 
     </main>
 
-    <footer class="site-footer">
-        © <span id="year"></span> Dennis Felicia — Final Web Development Project
-    </footer>
+    <div id="footer-placeholder"></div>
 
-    <script>
-        const reveals = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.15 });
-        reveals.forEach(el => observer.observe(el));
-
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        const root = document.documentElement;
-        const toggleBtn = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-
-        function applyTheme(theme) {
-            if (theme === 'light') {
-                root.classList.remove('theme-dark');
-                root.classList.add('theme-light');
-                themeIcon.textContent = '☀️';
-            } else {
-                root.classList.remove('theme-light');
-                root.classList.add('theme-dark');
-                themeIcon.textContent = '🌙';
-            }
-        }
-
-        const storedTheme = localStorage.getItem('theme');
-        applyTheme(storedTheme || 'dark');
-
-        toggleBtn.addEventListener('click', () => {
-            const next = root.classList.contains('theme-light') ? 'dark' : 'light';
-            applyTheme(next);
-            localStorage.setItem('theme', next);
-        });
-    </script>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

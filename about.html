@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="About – Dennis Felicia Portfolio" />
+    <meta name="description"
+        content="About – Learn more about Dennis Felicia, a front‑end developer focused on clarity, structure, and thoughtful interaction design." />
     <title>About – Dennis Felicia</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,28 +16,29 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="page-transition">
 
-    <body class="page-transition"></body>
     <header class="site-header">
         <div class="container">
             <nav class="site-nav">
+
                 <a href="index.html" class="brand">
                     <div class="brand-mark">DF</div>
                     <span class="brand-name">Dennis Felicia</span>
                 </a>
 
                 <div class="flex items-center gap-4">
+
                     <ul class="nav-links hidden md:flex">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="education.html">Education</a></li>
                         <li><a href="experience.html">Experience</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="about.html" class="is-active">About</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
 
                     <button id="themeToggle" class="theme-toggle" type="button">
@@ -47,17 +49,18 @@
                     <button id="mobileMenuBtn" class="hamburger md:hidden" aria-label="Open menu">
                         <span></span><span></span><span></span>
                     </button>
+
                 </div>
             </nav>
+        </div>
 
-            <div id="mobileMenu" class="mobile-menu hidden">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="education.html">Education</a>
-                <a href="experience.html">Experience</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About</a>
-            </div>
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
         </div>
     </header>
 
@@ -79,12 +82,11 @@
                     <h2 class="section-title">Who I Am</h2>
                     <p class="section-intro mt-3">
                         I’m a front‑end developer who values clean structure, semantic HTML, and interfaces that feel
-                        intentional.
-                        My work blends design sensibility with technical precision.
+                        intentional. My work blends design sensibility with technical precision.
                     </p>
                     <p class="section-intro mt-3">
                         I enjoy building systems — not just pages — and creating reusable components that scale across
-                        projects.
+                        projects. I focus on accessibility, responsive layouts, and maintainable code.
                     </p>
                 </div>
 
@@ -102,13 +104,31 @@
             </div>
         </section>
 
+        <section class="section-tight">
+            <div class="container reveal">
+                <div class="card">
+                    <p class="small-label">My Approach</p>
+                    <p class="section-intro mt-3">
+                        I believe great interfaces come from thoughtful structure, intentional spacing, and clear
+                        hierarchy. Whether I’m building a layout, refining a component, or improving accessibility, I
+                        aim for solutions that feel polished and intuitive.
+                    </p>
+
+                    <div class="tag-row mt-4">
+                        <span class="tag">UI Engineering</span>
+                        <span class="tag">Accessibility</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">Design Systems</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="site-footer">
-        © <span id="year"></span> Dennis Felicia — Final Web Development Project
-    </footer>
+    <div id="footer-placeholder"></div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

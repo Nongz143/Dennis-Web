@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Education – Dennis Felicia Portfolio" />
+    <meta name="description" content="Education – Coursework and academic background of Dennis Felicia." />
     <title>Education – Dennis Felicia</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,21 +15,22 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="page-transition">
 
-    <body class="page-transition"></body>
     <header class="site-header">
         <div class="container">
             <nav class="site-nav">
+
                 <a href="index.html" class="brand">
                     <div class="brand-mark">DF</div>
                     <span class="brand-name">Dennis Felicia</span>
                 </a>
 
                 <div class="flex items-center gap-4">
+
                     <ul class="nav-links hidden md:flex">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="projects.html">Projects</a></li>
@@ -43,10 +44,25 @@
                         <span id="themeIcon">🌙</span>
                         <span class="hidden sm:inline text-[0.7rem]">Theme</span>
                     </button>
+
+                    <button id="mobileMenuBtn" class="hamburger md:hidden" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
+
                 </div>
             </nav>
         </div>
+
+        <div id="mobileMenu" class="mobile-menu hidden">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
     </header>
+
     <main>
 
         <section class="section hero">
@@ -71,7 +87,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">AAS‑T in IT Networking</h3>
-                                <span class="card-subtitle">In progress</span>
+                                <span class="card-subtitle">In Progress</span>
                             </div>
 
                             <p class="section-intro mt-2">
@@ -123,8 +139,7 @@
 
                     <p class="section-intro mt-3">
                         My education blends networking fundamentals with front‑end development, giving me a strong sense
-                        of how the web works
-                        from the infrastructure up to the interface.
+                        of how the web works from the infrastructure up to the interface.
                     </p>
 
                     <div class="mt-5 space-y-2 text-xs muted">
@@ -143,48 +158,9 @@
 
     </main>
 
-    <footer class="site-footer">
-        © <span id="year"></span> Dennis Felicia — Final Web Development Project
-    </footer>
+    <div id="footer-placeholder"></div>
 
-    <script>
-        const reveals = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.15 });
-        reveals.forEach(el => observer.observe(el));
-
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        const root = document.documentElement;
-        const toggleBtn = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-
-        function applyTheme(theme) {
-            if (theme === 'light') {
-                root.classList.remove('theme-dark');
-                root.classList.add('theme-light');
-                themeIcon.textContent = '☀️';
-            } else {
-                root.classList.remove('theme-light');
-                root.classList.add('theme-dark');
-                themeIcon.textContent = '🌙';
-            }
-        }
-
-        const storedTheme = localStorage.getItem('theme');
-        applyTheme(storedTheme || 'dark');
-
-        toggleBtn.addEventListener('click', () => {
-            const next = root.classList.contains('theme-light') ? 'dark' : 'light';
-            applyTheme(next);
-            localStorage.setItem('theme', next);
-        });
-    </script>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
