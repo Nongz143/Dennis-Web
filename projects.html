@@ -4,158 +4,75 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Projects by Dennis Felicia – A curated selection of responsive, accessible, and thoughtfully engineered web work." />
-    <title>Projects – Dennis Felicia</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="page-transition">
-
-    <header class="site-header">
-        <div class="container">
-            <nav class="site-nav">
-
-                <a href="index.html" class="brand">
-                    <div class="brand-mark">DF</div>
-                    <span class="brand-name">Dennis Felicia</span>
-                </a>
-
-                <div class="flex items-center gap-4">
-
-                    <ul class="nav-links hidden md:flex">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="experience.html">Experience</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-
-                    <button id="themeToggle" class="theme-toggle" type="button">
-                        <span id="themeIcon">🌙</span>
-                        <span class="hidden sm:inline text-[0.7rem]">Theme</span>
-                    </button>
-
-                    <button id="mobileMenuBtn" class="hamburger md:hidden" aria-label="Open menu">
-                        <span></span><span></span><span></span>
-                    </button>
-
-                </div>
-            </nav>
-        </div>
-
-        <div id="mobileMenu" class="mobile-menu hidden">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="education.html">Education</a>
-            <a href="experience.html">Experience</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-        </div>
+<body class="bg-ink text-champagne font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-ink shadow-md">
+        <nav class="flex justify-between items-center px-6 py-4">
+            <h1 class="text-xl font-bold">Dennis Felicia</h1>
+            <ul class="flex space-x-4 text-sm font-medium">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main class="pt-28 container mx-auto px-4">
+        <section class="section reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="text-lg mb-6">These projects reflect my growth in semantic HTML, responsive CSS, accessibility,
+                and theme-aware UI engineering. Each one was built using Visual Studio Code and deployed via GitHub
+                Pages.</p>
+        </section>
 
-        <section class="section hero">
-            <div class="container reveal">
-                <h1 class="hero-title">Projects & Work</h1>
-                <p class="hero-tagline">
-                    A curated selection of work that highlights my approach to structure, responsiveness, accessibility,
-                    and clean UI engineering.
-                </p>
+        <section class="section reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="project-card">
+                <img src="images/project1.png" alt="Project 1 Thumbnail" class="rounded mb-2" />
+                <h3 class="font-bold text-lg">JavaScript Form Validator</h3>
+                <p class="text-sm mb-2">A clean, accessible form with real-time validation and error feedback. Built
+                    with vanilla JS and custom CSS.</p>
+                <a href="https://nongz143.github.io/Dennis-Web/form-validator"
+                    class="underline hover:text-sky-400 text-sm">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project2.png" alt="Project 2 Thumbnail" class="rounded mb-2" />
+                <h3 class="font-bold text-lg">Simple Portfolio</h3>
+                <p class="text-sm mb-2">A responsive one-page portfolio with sticky header, smooth scroll, and elegant
+                    typography. Fully theme-aware.</p>
+                <a href="https://nongz143.github.io/Dennis-Web/simple-portfolio"
+                    class="underline hover:text-sky-400 text-sm">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project3.png" alt="Project 3 Thumbnail" class="rounded mb-2" />
+                <h3 class="font-bold text-lg">Multi-Page Developer Site</h3>
+                <p class="text-sm mb-2">A modular site with semantic structure, custom classes, and luxury editorial
+                    palette. Includes README and snapshot.</p>
+                <a href="https://nongz143.github.io/Dennis-Web/index.html"
+                    class="underline hover:text-sky-400 text-sm">View Project</a>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container reveal">
-                <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-
-                    <article class="card">
-                        <div class="thumbnail-placeholder h-40 mb-4">
-                            Thumbnail Placeholder
-                        </div>
-
-                        <h3 class="card-title">Responsive Portfolio Layout</h3>
-                        <p class="section-intro mt-2">
-                            A fully responsive, multi‑page portfolio built with semantic HTML, a custom CSS design
-                            system, and smooth page transitions.
-                        </p>
-
-                        <div class="tag-row mt-3">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">Tailwind</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-
-                        <a href="#" class="btn-outline mt-4 inline-flex">
-                            View Case Study <span>↗</span>
-                        </a>
-                    </article>
-
-                    <article class="card">
-                        <div class="thumbnail-placeholder h-40 mb-4">
-                            Thumbnail Placeholder
-                        </div>
-
-                        <h3 class="card-title">Accessible Component Library</h3>
-                        <p class="section-intro mt-2">
-                            A small library of reusable UI components designed with accessibility in mind. Includes
-                            buttons, cards, navigation patterns, and form elements.
-                        </p>
-
-                        <div class="tag-row mt-3">
-                            <span class="tag">ARIA</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Design Systems</span>
-                        </div>
-
-                        <a href="#" class="btn-outline mt-4 inline-flex">
-                            Explore Components <span>↗</span>
-                        </a>
-                    </article>
-
-                    <article class="card">
-                        <div class="thumbnail-placeholder h-40 mb-4">
-                            Thumbnail Placeholder
-                        </div>
-
-                        <h3 class="card-title">Dashboard‑Style Education View</h3>
-                        <p class="section-intro mt-2">
-                            A card‑based dashboard that visualizes coursework, skills, and progress using tags, progress
-                            bars, and timelines.
-                        </p>
-
-                        <div class="tag-row mt-3">
-                            <span class="tag">Grid</span>
-                            <span class="tag">Data Viz</span>
-                            <span class="tag">RWD</span>
-                        </div>
-
-                        <a href="#" class="btn-outline mt-4 inline-flex">
-                            View Layout <span>↗</span>
-                        </a>
-                    </article>
-
-                </div>
-            </div>
+        <section class="section reveal mt-12">
+            <h3 class="text-xl font-semibold mb-4">🖼️ Desktop Snapshot Reference</h3>
+            <img src="images/snapshot.png" alt="Desktop Snapshot" class="rounded shadow-lg max-w-full h-auto mb-4" />
+            <p class="text-sm italic">This snapshot shows my active workspace during final portfolio development. Visual
+                Studio Code is the topmost app, with Microsoft Edge, Windows Explorer, Word, Chrome, and system tools
+                layered around it. It reflects my multitasking setup and attention to detail across layout, deployment,
+                and documentation.</p>
         </section>
-
     </main>
 
-    <div id="footer-placeholder"></div>
-
-    <script src="js/script.js"></script>
-
+    <footer class="text-center py-6 text-sm bg-midnight text-white mt-12">
+        <p>© 2026 Dennis Felicia. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
