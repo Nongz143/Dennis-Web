@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Projects by Dennis Felicia – Elegant, responsive web development work and UI engineering." />
+    <title>Projects – Dennis Felicia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <body class="page-transition"></body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav">
+                <a href="index.html" class="brand">
+                    <div class="brand-mark">DF</div>
+                    <span class="brand-name">Dennis Felicia</span>
+                </a>
+
+                <div class="flex items-center gap-4">
+                    <ul class="nav-links hidden md:flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+
+                    <button id="themeToggle" class="theme-toggle" type="button">
+                        <span id="themeIcon">🌙</span>
+                        <span class="hidden sm:inline text-[0.7rem]">Theme</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section hero">
+            <div class="container reveal">
+                <h1 class="hero-title">Projects & Work</h1>
+                <p class="hero-tagline">
+                    A curated selection of projects that highlight my approach to structure, responsiveness,
+                    accessibility, and developer‑friendly code.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container reveal">
+                <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+                    <article class="card">
+                        <div class="thumbnail-placeholder h-40 mb-4">
+                            Thumbnail Placeholder
+                        </div>
+
+                        <h3 class="card-title">Responsive Portfolio Layout</h3>
+                        <p class="section-intro mt-2">
+                            A fully responsive, single‑page portfolio with smooth scrolling, sticky navigation, and a
+                            bento‑style project grid.
+                        </p>
+
+                        <div class="tag-row mt-3">
+                            <span class="tag">HTML</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+
+                        <a href="#" class="btn-outline mt-4 inline-flex">
+                            View Case Study <span>↗</span>
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <div class="thumbnail-placeholder h-40 mb-4">
+                            Thumbnail Placeholder
+                        </div>
+
+                        <h3 class="card-title">Accessible Component Library</h3>
+                        <p class="section-intro mt-2">
+                            A small library of reusable UI components with keyboard navigation, focus states, and clear
+                            documentation.
+                        </p>
+
+                        <div class="tag-row mt-3">
+                            <span class="tag">ARIA</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Design Systems</span>
+                        </div>
+
+                        <a href="#" class="btn-outline mt-4 inline-flex">
+                            Explore Components <span>↗</span>
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <div class="thumbnail-placeholder h-40 mb-4">
+                            Thumbnail Placeholder
+                        </div>
+
+                        <h3 class="card-title">Dashboard‑Style Education View</h3>
+                        <p class="section-intro mt-2">
+                            A card‑based dashboard that visualizes coursework, skills, and progress using tags, progress
+                            bars, and timelines.
+                        </p>
+
+                        <div class="tag-row mt-3">
+                            <span class="tag">Grid</span>
+                            <span class="tag">Data Viz</span>
+                            <span class="tag">RWD</span>
+                        </div>
+
+                        <a href="#" class="btn-outline mt-4 inline-flex">
+                            View Layout <span>↗</span>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        © <span id="year"></span> Dennis Felicia — Final Web Development Project
+    </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(el => observer.observe(el));
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const root = document.documentElement;
+        const toggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function applyTheme(theme) {
+            if (theme === 'light') {
+                root.classList.remove('theme-dark');
+                root.classList.add('theme-light');
+                themeIcon.textContent = '☀️';
+            } else {
+                root.classList.remove('theme-light');
+                root.classList.add('theme-dark');
+                themeIcon.textContent = '🌙';
+            }
+        }
+
+        const storedTheme = localStorage.getItem('theme');
+        applyTheme(storedTheme || 'dark');
+
+        toggleBtn.addEventListener('click', () => {
+            const next = root.classList.contains('theme-light') ? 'dark' : 'light';
+            applyTheme(next);
+            localStorage.setItem('theme', next);
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

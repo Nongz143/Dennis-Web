@@ -1,170 +1,107 @@
 Hello All!
 
-# Dennis Felicia — Final Web Project (CIS155)
+🚀 Developer Portfolio – Final Web Project
 
-This project is my final submission for **CIS155 – Web Development I**.  
-It demonstrates my ability to build a **fully responsive, accessible, multi‑page website** using semantic HTML, Tailwind CSS, animations, dark mode, and modern usability conventions.
+by Dennis Felicia
+This project is a multi‑page, responsive developer portfolio built using semantic HTML, a custom CSS design system, minimal Tailwind utilities, and lightweight JavaScript for interactivity. It demonstrates modern front‑end practices including component reuse, theme management, responsive layouts, and clean UI engineering.
+The site is deployed via GitHub Pages.
 
-The site includes a polished homepage, three subpages, documentation, a snapshot page, and a consistent design system across all pages.
-
-## 🌐 Live Website (GitHub Pages)
-
-**Visit the live site:**  
+ 🌐 Live Demo
 https://nongz143.github.io/Dennis-Web/
 
-## 📌 Project Overview
+🧱 Project Overview
+This portfolio was designed to showcase both technical skills and design sensibility. It includes:
+• 	A fully responsive layout
+• 	A global navigation system with mobile hamburger menu
+• 	Light/Dark theme toggle with persistent state
+• 	Smooth page transitions
+• 	Reusable UI components (cards, tags, progress bars, footer)
+• 	Clean, semantic HTML structure
+• 	Organized CSS architecture with variables and utility classes
+• 	JavaScript enhancements for UX polish
 
-This website was built to showcase my understanding of:
+📁 Project Structure
 
-- Semantic HTML  
-- Responsive Web Design (RWD)  
-- Tailwind CSS utility‑first styling  
-- Accessibility best practices  
-- Multi‑page navigation  
-- Animations and interactivity  
-- Dark mode implementation  
-- Clean file organization and documentation  
+• 	style.css – global design system (themes, layout, typography, cards, utilities)
+• 	script.js – theme toggle, mobile menu, transitions, reveal animations, footer injection
+• 	footer.html – shared footer component
+• 	Tailwind – used minimally for layout helpers only
 
-The site includes:
+🎨 Design System
+The site uses a custom design system featuring:
+• 	Editorial typography (Playfair Display + Inter)
+• 	A gold‑accented dark theme
+• 	A cream‑based light theme
+• 	Consistent spacing scale
+• 	Card‑based layout patterns
+• 	Smooth transitions and reveal animations
+The design emphasizes clarity, hierarchy, and readability across all screen sizes.
 
-- A homepage with hero section, skills, projects, education, experience, documentation links, and contact section  
-- Three subpages: **About**, **Courses**, and **Contact**  
-- A **Snapshot** page showing my development environment  
-- A consistent navigation bar and footer across all pages  
-- A dark/light mode toggle  
-- Scroll animations using AOS  
+📱 Responsive Web Design
+The layout adapts seamlessly across:
+• 	Desktop
+• 	Tablet
+• 	Mobile
+Using:
+• 	CSS Grid
+• 	Flexbox
+• 	Fluid spacing
+• 	Mobile‑first structure
+• 	A responsive hamburger menu
 
-## ✨ Features
+♿ Accessibility
+The project incorporates:
+• 	Semantic HTML5 structure
+• 	High‑contrast themes
+• 	Legible font sizes
+• 	Keyboard‑friendly navigation
+• 	Alt text support for images
+• 	Clear focus states
 
-### Responsive Layout  
-The entire site adapts to mobile, tablet, and desktop screen sizes using Tailwind’s responsive utilities.
+🧩 Key Features
+• 	Light/Dark Mode with smooth transitions
+• 	Mobile Hamburger Menu
+• 	Page Transition Animations
+• 	Reveal‑on‑scroll animations
+• 	Reusable components (cards, tags, progress bars)
+• 	Global footer injection
+• 	Minimal Tailwind + custom CSS hybrid
+• 	GitHub Pages deployment
 
-### Semantic HTML  
-Sections are structured using `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, and proper heading hierarchy.
+🛠️ Tech Stack
+• 	HTML5
+• 	CSS3 (custom design system)
+• 	Tailwind CSS (layout utilities only)
+• 	JavaScript (interactivity + UX enhancements)
+• 	GitHub Pages (deployment)
 
-### Dark Mode  
-A custom JavaScript toggle switches between light and dark themes using Tailwind’s `dark:` classes.
+🚀 Running the Project Locally
+1. 	Clone the repository
+2. 	Open  in your browser
+3. 	Ensure  and  paths remain intact
 
-### Scroll Animations  
-AOS (Animate On Scroll) adds fade‑up and zoom‑in animations throughout the site.
+📄 Purpose
+This project was created as the Final Web Development Project, demonstrating:
+• 	Semantic HTML
+• 	Responsive design
+• 	Accessibility
+• 	Clean CSS architecture
+• 	JavaScript enhancements
+• 	Multi‑page site structure
+• 	GitHub Pages deployment
 
-### Modal & Lightbox  
-The homepage includes a modal, and the snapshot page includes a lightbox for viewing the screenshot.
-
-### Accessibility  
-- All images include `alt` attributes  
-- High‑contrast color palette  
-- Keyboard‑visible focus states  
-- Legible fonts and sizes  
-- Semantic structure for screen readers  
-
-### Consistent Navigation  
-Every page includes the same navigation bar and footer for a unified user experience.
-
----
-
-## 🛠 Technologies Used
-
-- **HTML5**  
-- **CSS3**  
-- **Tailwind CSS**  
-- **JavaScript (ES6)**  
-- **AOS Animation Library**  
-- **Google Fonts (Inter & Playfair Display)**  
-- **Font Awesome Icons**  
-- **GitHub Pages** for hosting  
-
----
-
-## 📁 File Structure
-project-folder/ │ ├── index.html ├── about.html ├── Page2.html ├── Page3.html ├── snapshot.html │ ├── css/ │   └── style.css │ ├── img/ │   ├── snapshot.png │   ├── IMG_ME.JPG │   └── other images... │ ├── script.js └── README.md
-
----
-
-## 🧭 Navigation Guide
-
-The navigation bar links to:
-
-- **Home** – index.html  
-- **About** – about.html  
-- **Courses** – Page2.html  
-- **Contact** – Page3.html  
-- **Documentation** – snapshot.html + README.md  
-
-All pages include the same header and footer for consistency.
-
----
-
-## 🖼 Desktop Snapshot
-
-A full screenshot of my development environment is included on:
-
-- **snapshot.html**  
-- **README.md (this file)**  
-
-### Snapshot Preview  
-*(Displayed on the snapshot page using a lightbox modal)*
-
----
-
-## 👥 Peer Feedback & Improvements
-
-### Feedback from Wendy  
-**Suggestion:** Improve spacing and alignment on the homepage.  
-**Action Taken:** Adjusted padding, centered content, and improved layout using Tailwind utilities.
-
-### Feedback from Mitchell  
-**Suggestion:** Add more interactivity and polish.  
-**Action Taken:** Added dark mode toggle, scroll animations, hover effects, and a modal/lightbox.
-
-### Additional Improvements  
-- Reorganized CSS with comments  
-- Ensured consistent navigation across all pages  
-- Added accessibility focus states  
-- Improved color contrast for readability  
-
----
-
-## ♿ Accessibility Features
-
-- Alt text for all images  
-- High‑contrast dark mode  
-- Keyboard‑visible focus outlines  
-- Semantic HTML structure  
-- Legible font sizes and spacing  
-
----
-
-## 📱 Responsive Design Notes
-
-The site uses Tailwind’s responsive classes such as:
-
-- `md:grid-cols-2`  
-- `md:flex-row`  
-- `max-w-*` containers  
-- `p-*` and `m-*` spacing utilities  
-
-This ensures the layout adapts smoothly to all screen sizes.
-
----
-
-## 🙌 Credits
-
-- **Developer:** Dennis L. Felicia  
+👨‍💻 Author
+Dennis Felicia
+Front‑End Developer & IT Networking Student
 - **Course:** CIS155 – Web Development I 
-- **Instructor:** Prof. Javaris Taylor  
-- **Libraries:** Tailwind CSS, AOS, Font Awesome  
+- **Instructor:** Prof. Javaris Taylor   
 - **Hosting:** GitHub Pages  
 
----
+✨ Final Thoughts
 
-## Final Thoughts
+This project demonstrates everything learned in class: semantic HTML, responsive design, accessibility, clean CSS, JavaScript interactions, and GitHub Pages deployment — all wrapped in a cohesive, professional portfolio.
 
-This project represents my growth as a web developer.  
-I focused on clarity, usability, accessibility, and modern design principles to create a polished, professional website. It helped me understand how layout strategies affect usability and presentation. I learned how to debug HTML/CSS, apply peer feedback, and polish a site for professional submission.
 
 Thank you for reviewing my work!
-
-
 © 2026 Dennis Felicia. All rights reserved.
 

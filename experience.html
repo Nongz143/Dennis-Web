@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Experience – Dennis Felicia Portfolio" />
+    <title>Experience – Dennis Felicia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <body class="page-transition"></body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav">
+                <a href="index.html" class="brand">
+                    <div class="brand-mark">DF</div>
+                    <span class="brand-name">Dennis Felicia</span>
+                </a>
+
+                <div class="flex items-center gap-4">
+                    <ul class="nav-links hidden md:flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+
+                    <button id="themeToggle" class="theme-toggle" type="button">
+                        <span id="themeIcon">🌙</span>
+                        <span class="hidden sm:inline text-[0.7rem]">Theme</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section hero">
+            <div class="container reveal">
+                <h1 class="hero-title">Experience</h1>
+                <p class="hero-tagline">
+                    Roles and responsibilities that shaped how I collaborate, debug, and deliver thoughtful,
+                    maintainable front‑end work.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container reveal grid gap-8 md:grid-cols-2">
+
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">Front‑End Project Work</h3>
+                            <p class="card-subtitle">Academic & Personal Projects</p>
+                        </div>
+                        <span class="card-subtitle">Ongoing</span>
+                    </div>
+
+                    <p class="section-intro mt-4">
+                        Built responsive, multi‑page sites using semantic HTML, organized CSS, and GitHub Pages
+                        deployment. Focused on
+                        accessibility, consistent navigation, and cohesive visual systems.
+                    </p>
+
+                    <ul class="mt-4 space-y-1 text-xs muted">
+                        <li>• Implemented sticky headers, smooth scrolling, and mobile‑friendly navigation.</li>
+                        <li>• Structured content with headings, lists, and clear hierarchy for readability.</li>
+                        <li>• Ensured alt text, contrast, and keyboard‑friendly interactions across pages.</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title">Technical Collaboration & Support</h3>
+                            <p class="card-subtitle">Coursework & Peer Collaboration</p>
+                        </div>
+                        <span class="card-subtitle">Ongoing</span>
+                    </div>
+
+                    <p class="section-intro mt-4">
+                        Worked with classmates to troubleshoot layout issues, refine navigation, and improve project
+                        documentation. Emphasized
+                        clear communication and reproducible steps when debugging.
+                    </p>
+
+                    <ul class="mt-4 space-y-1 text-xs muted">
+                        <li>• Reviewed HTML/CSS for structure, indentation, and naming consistency.</li>
+                        <li>• Helped refine responsive breakpoints and mobile‑first layouts.</li>
+                        <li>• Shared best practices for Git workflows and deployment to GitHub Pages.</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        © <span id="year"></span> Dennis Felicia — Final Web Development Project
+    </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(el => observer.observe(el));
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const root = document.documentElement;
+        const toggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function applyTheme(theme) {
+            if (theme === 'light') {
+                root.classList.remove('theme-dark');
+                root.classList.add('theme-light');
+                themeIcon.textContent = '☀️';
+            } else {
+                root.classList.remove('theme-light');
+                root.classList.add('theme-dark');
+                themeIcon.textContent = '🌙';
+            }
+        }
+
+        const storedTheme = localStorage.getItem('theme');
+        applyTheme(storedTheme || 'dark');
+
+        toggleBtn.addEventListener('click', () => {
+            const next = root.classList.contains('theme-light') ? 'dark' : 'light';
+            applyTheme(next);
+            localStorage.setItem('theme', next);
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

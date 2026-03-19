@@ -1,279 +1,188 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="theme-dark">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Education - Dennis Felicia</title>
+    <meta name="description" content="Education – Dennis Felicia Portfolio" />
+    <title>Education – Dennis Felicia</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="https://kit.fontawesome.com/a2e0e6ad65.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+<body>
 
-    <header class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-50">
-        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <body class="page-transition"></body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav">
+                <a href="index.html" class="brand">
+                    <div class="brand-mark">DF</div>
+                    <span class="brand-name">Dennis Felicia</span>
+                </a>
 
-            <h1 class="text-xl font-bold text-blue-900 dark:text-blue-300">Dennis Felicia</h1>
-
-            <button id="hamburger" class="md:hidden text-3xl focus:outline-none">
-                ☰
-            </button>
-
-            <ul id="nav-menu" class="hidden md:flex space-x-6 text-sm font-semibold">
-
-                <li><a href="index.html" class="hover:text-blue-700 dark:hover:text-blue-400">Home</a></li>
-                <li><a href="about.html" class="hover:text-blue-700 dark:hover:text-blue-400">About</a></li>
-                <li><a href="education.html" class="hover:text-blue-700 dark:hover:text-blue-400">Education</a></li>
-                <li><a href="Page2.html" class="hover:text-blue-700 dark:hover:text-blue-400">Courses</a></li>
-                <li><a href="Page3.html" class="hover:text-blue-700 dark:hover:text-blue-400">Contact</a></li>
-                <li><a href="snapshot.html" class="hover:text-blue-700 dark:hover:text-blue-400">Documentation</a></li>
-
-                <li class="relative group">
-                    <button class="hover:text-blue-700 dark:hover:text-blue-400">
-                        More ▼
-                    </button>
-
-                    <ul
-                        class="absolute left-0 mt-2 bg-white dark:bg-gray-800 shadow rounded hidden group-hover:block p-2 space-y-2 w-40">
-                        <li><a href="blog.html" class="block hover:text-blue-700 dark:hover:text-blue-400">Blog</a></li>
-                        <li><a href="gallery.html"
-                                class="block hover:text-blue-700 dark:hover:text-blue-400">Gallery</a></li>
-                        <li><a href="projects.html"
-                                class="block hover:text-blue-700 dark:hover:text-blue-400">Projects</a></li>
+                <div class="flex items-center gap-4">
+                    <ul class="nav-links hidden md:flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
-                </li>
 
-            </ul>
-
-            <button id="darkModeToggle"
-                class="text-2xl p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition">
-                <i id="themeIcon" class="fas fa-moon text-gray-800 dark:text-gray-200"></i>
-            </button>
-
-        </nav>
+                    <button id="themeToggle" class="theme-toggle" type="button">
+                        <span id="themeIcon">🌙</span>
+                        <span class="hidden sm:inline text-[0.7rem]">Theme</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
+    <main>
 
-    <section class="pt-32 pb-16 text-center" data-aos="fade-up">
-        <h2 class="text-5xl font-bold text-blue-900 dark:text-blue-300">Education</h2>
-        <p class="text-lg mt-4 text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-            A complete overview of my academic journey, coursework, and progress toward my IT Networking AAS‑T degree.
-        </p>
-    </section>
-
-    <section class="max-w-6xl mx-auto p-8" data-aos="fade-up">
-        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow">
-            <h3 class="text-2xl font-semibold text-blue-900 dark:text-blue-300 mb-2 flex items-center gap-2">
-                <i class="fas fa-graduation-cap"></i> IT Networking AAS‑T Progress
-            </h3>
-
-            <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-2">
-                <div class="bg-green-500 h-2 rounded" style="width: 45%;"></div>
+        <section class="section hero">
+            <div class="container reveal">
+                <h1 class="hero-title">Education</h1>
+                <p class="hero-tagline">
+                    A blend of networking fundamentals and front‑end development that shaped how I think about systems,
+                    structure, and the web.
+                </p>
             </div>
+        </section>
 
-            <p class="text-sm mt-2 text-gray-700 dark:text-gray-300">
-                45% of degree completed
-            </p>
+        <section class="section">
+            <div class="container reveal">
 
-            <a href="docs/transcript.pdf"
-                class="inline-block bg-blue-900 text-white px-5 py-2 rounded hover:bg-blue-700 transition mt-4">
-                Download Transcript (PDF)
-            </a>
-        </div>
-    </section>
+                <ol class="border-l border-[var(--color-border)] pl-6 space-y-10">
 
-    <section class="max-w-6xl mx-auto p-8" data-aos="fade-up">
-        <h3 class="text-3xl font-bold mb-6 text-blue-900 dark:text-blue-300">Course Dashboard</h3>
+                    <li class="relative">
+                        <span
+                            class="absolute -left-[10px] top-1 h-3 w-3 rounded-full border border-[var(--color-accent)] bg-[var(--color-bg)]"></span>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">AAS‑T in IT Networking</h3>
+                                <span class="card-subtitle">In progress</span>
+                            </div>
 
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-network-wired"></i> CIS182 – Networking Concepts
-                </h4>
+                            <p class="section-intro mt-2">
+                                Coursework covering networking concepts, operating systems, information systems, and
+                                security.
+                            </p>
 
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">Networking</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-green-200 dark:bg-green-700 text-green-900 dark:text-green-100 rounded">Protocols</span>
-                </div>
+                            <ul class="grid sm:grid-cols-2 gap-1 mt-4 text-xs muted">
+                                <li>• Networking Concepts & Infrastructure</li>
+                                <li>• Operating Systems & Administration</li>
+                                <li>• Information Systems Security</li>
+                                <li>• Web Development Foundations</li>
+                            </ul>
+                        </div>
+                    </li>
 
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
+                    <li class="relative">
+                        <span
+                            class="absolute -left-[10px] top-1 h-3 w-3 rounded-full border border-[var(--color-accent)] bg-[var(--color-bg)] opacity-70"></span>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Web Development Coursework</h3>
+                                <span class="card-subtitle">Academic Projects</span>
+                            </div>
+
+                            <p class="section-intro mt-2">
+                                Emphasis on semantic HTML, responsive CSS, accessibility, and project documentation.
+                            </p>
+
+                            <ul class="grid sm:grid-cols-2 gap-1 mt-4 text-xs muted">
+                                <li>• Responsive Layout & Grid Systems</li>
+                                <li>• Tailwind & Utility‑First Workflows</li>
+                                <li>• GitHub Pages Deployment</li>
+                                <li>• Writing for the Web & UX Copy</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ol>
+
             </div>
+        </section>
 
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-desktop"></i> CIS111 – Introduction to Operating Systems
-                </h4>
+        <section class="section-tight">
+            <div class="container reveal">
+                <div class="card card-soft">
+                    <p class="small-label">Education Snapshot</p>
 
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-purple-200 dark:bg-purple-700 text-purple-900 dark:text-purple-100 rounded">OS</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 rounded">File
-                        Systems</span>
+                    <p class="section-intro mt-3">
+                        My education blends networking fundamentals with front‑end development, giving me a strong sense
+                        of how the web works
+                        from the infrastructure up to the interface.
+                    </p>
+
+                    <div class="mt-5 space-y-2 text-xs muted">
+                        <div class="flex justify-between">
+                            <span>Core technical foundation</span>
+                            <span class="tag">solid</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Front‑end specialization</span>
+                            <span class="tag">growing</span>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
             </div>
+        </section>
 
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-database"></i> CIS100 – Information Systems Concepts
-                </h4>
+    </main>
 
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-yellow-200 dark:bg-yellow-700 text-yellow-900 dark:text-yellow-100 rounded">IS</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">Hardware</span>
-                </div>
-
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
-            </div>
-
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-square-root-alt"></i> MATH91 – Pre‑Algebra
-                </h4>
-
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-red-200 dark:bg-red-700 text-red-900 dark:text-red-100 rounded">Math</span>
-                </div>
-
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
-            </div>
-
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-shield-alt"></i> CIS236 – Information Systems Security I
-                </h4>
-
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-red-200 dark:bg-red-700 text-red-900 dark:text-red-100 rounded">Security</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 rounded">Threats</span>
-                </div>
-
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
-            </div>
-
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-code"></i> CIS155 – Web Development I
-                </h4>
-
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">HTML</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-green-200 dark:bg-green-700 text-green-900 dark:text-green-100 rounded">CSS</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-purple-200 dark:bg-purple-700 text-purple-900 dark:text-purple-100 rounded">Tailwind</span>
-                </div>
-
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
-            </div>
-
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-pencil-alt"></i> ENGL 91 – Read/Write in Life & College
-                </h4>
-
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-yellow-200 dark:bg-yellow-700 text-yellow-900 dark:text-yellow-100 rounded">Writing</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">Reading</span>
-                </div>
-
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
-            </div>
-
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-desktop"></i> CIS212 – Windows/Professional
-                </h4>
-
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 rounded">Windows</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-green-200 dark:bg-green-700 text-green-900 dark:text-green-100 rounded">Admin</span>
-                </div>
-
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
-            </div>
-
-            <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded shadow hover:shadow-lg transition">
-                <h4 class="text-xl font-semibold text-blue-900 dark:text-blue-300 flex items-center gap-2">
-                    <i class="fas fa-tools"></i> CIS172 – Technical Support Skills
-                </h4>
-
-                <div class="mt-2 flex flex-wrap gap-2">
-                    <span
-                        class="px-2 py-0.5 text-xs bg-red-200 dark:bg-red-700 text-red-900 dark:text-red-100 rounded">Support</span>
-                    <span
-                        class="px-2 py-0.5 text-xs bg-blue-200 dark:bg-blue-700 text-blue-900 dark:text-blue-100 rounded">Troubleshooting</span>
-                </div>
-
-                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded h-1.5 mt-3">
-                    <div class="bg-blue-600 h-1.5 rounded" style="width: 100%;"></div>
-                </div>
-                <p class="text-xs mt-1 text-gray-600 dark:text-gray-400">Completed 100%</p>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="bg-gray-900 text-gray-300 py-8 mt-12">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <img src="https://cdn.wallpapersafari.com/46/51/01wsum.jpg" alt="Golf Image"
-                class="mx-auto w-full max-w-3xl rounded shadow mb-6" />
-
-            <ul class="space-y-1">
-                <li class="font-semibold">Dennis L. Felicia • 26 January</li>
-                <li>&copy; 2026 Dennis Felicia</li>
-            </ul>
-        </div>
+    <footer class="site-footer">
+        © <span id="year"></span> Dennis Felicia — Final Web Development Project
     </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(el => observer.observe(el));
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const root = document.documentElement;
+        const toggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function applyTheme(theme) {
+            if (theme === 'light') {
+                root.classList.remove('theme-dark');
+                root.classList.add('theme-light');
+                themeIcon.textContent = '☀️';
+            } else {
+                root.classList.remove('theme-light');
+                root.classList.add('theme-dark');
+                themeIcon.textContent = '🌙';
+            }
+        }
+
+        const storedTheme = localStorage.getItem('theme');
+        applyTheme(storedTheme || 'dark');
+
+        toggleBtn.addEventListener('click', () => {
+            const next = root.classList.contains('theme-light') ? 'dark' : 'light';
+            applyTheme(next);
+            localStorage.setItem('theme', next);
+        });
+    </script>
 
     <script src="script.js"></script>
 

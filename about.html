@@ -1,95 +1,111 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="theme-dark">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Dennis Felicia</title>
+    <meta name="description" content="About – Dennis Felicia Portfolio" />
+    <title>About – Dennis Felicia</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+<body>
 
-    <header class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-50">
-        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <body class="page-transition"></body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-nav">
+                <a href="index.html" class="brand">
+                    <div class="brand-mark">DF</div>
+                    <span class="brand-name">Dennis Felicia</span>
+                </a>
 
-            <h1 class="text-xl font-bold text-blue-900 dark:text-blue-300">Dennis Felicia</h1>
+                <div class="flex items-center gap-4">
+                    <ul class="nav-links hidden md:flex">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html" class="is-active">About</a></li>
+                    </ul>
 
-            <button id="hamburger" class="md:hidden text-3xl focus:outline-none">
-                ☰
-            </button>
-
-            <ul id="nav-menu" class="hidden md:flex space-x-6 text-sm font-semibold">
-
-                <li><a href="index.html" class="hover:text-blue-700 dark:hover:text-blue-400">Home</a></li>
-                <li><a href="about.html" class="hover:text-blue-700 dark:hover:text-blue-400">About</a></li>
-                <li><a href="education.html" class="hover:text-blue-700 dark:hover:text-blue-400">Education</a></li>
-                <li><a href="Page2.html" class="hover:text-blue-700 dark:hover:text-blue-400">Courses</a></li>
-                <li><a href="Page3.html" class="hover:text-blue-700 dark:hover:text-blue-400">Contact</a></li>
-                <li><a href="snapshot.html" class="hover:text-blue-700 dark:hover:text-blue-400">Documentation</a></li>
-
-                <li class="relative group">
-                    <button class="hover:text-blue-700 dark:hover:text-blue-400">
-                        More ▼
+                    <button id="themeToggle" class="theme-toggle" type="button">
+                        <span id="themeIcon">🌙</span>
+                        <span class="hidden sm:inline text-[0.7rem]">Theme</span>
                     </button>
 
-                    <ul
-                        class="absolute left-0 mt-2 bg-white dark:bg-gray-800 shadow rounded hidden group-hover:block p-2 space-y-2 w-40">
-                        <li><a href="blog.html" class="block hover:text-blue-700 dark:hover:text-blue-400">Blog</a></li>
-                        <li><a href="gallery.html"
-                                class="block hover:text-blue-700 dark:hover:text-blue-400">Gallery</a></li>
-                        <li><a href="projects.html"
-                                class="block hover:text-blue-700 dark:hover:text-blue-400">Projects</a></li>
-                    </ul>
-                </li>
+                    <button id="mobileMenuBtn" class="hamburger md:hidden" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
 
-            </ul>
-
-            <button id="darkModeToggle"
-                class="text-2xl p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition">
-                <i id="themeIcon" class="fas fa-moon text-gray-800 dark:text-gray-200"></i>
-            </button>
-
-        </nav>
+            <div id="mobileMenu" class="mobile-menu hidden">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
     </header>
 
-    <main class="max-w-4xl mx-auto p-8 pt-28" data-aos="fade-up">
+    <main>
 
-        <h2 class="text-4xl font-bold mb-4 text-blue-900 dark:text-blue-300">About This Site</h2>
+        <section class="section hero">
+            <div class="container reveal">
+                <h1 class="hero-title">About Me</h1>
+                <p class="hero-tagline">
+                    A developer focused on clarity, structure, and thoughtful interaction design.
+                </p>
+            </div>
+        </section>
 
-        <p class="text-lg mb-4 text-gray-700 dark:text-gray-300">
-            This site was built for CIS155 to showcase my skills in HTML, CSS, Tailwind, and responsive design.
-            It includes semantic structure, accessibility features, and a polished layout using Google Fonts and
-            utility‑first styling.
-        </p>
+        <section class="section">
+            <div class="container reveal grid gap-10 md:grid-cols-2">
 
-        <p class="text-lg text-gray-700 dark:text-gray-300">
-            I’ve customized each page to reflect my learning journey, with a focus on clarity, professionalism,
-            and usability. This project represents my growth as a developer and my commitment to building clean,
-            responsive, and accessible web experiences.
-        </p>
+                <div>
+                    <h2 class="section-title">Who I Am</h2>
+                    <p class="section-intro mt-3">
+                        I’m a front‑end developer who values clean structure, semantic HTML, and interfaces that feel
+                        intentional.
+                        My work blends design sensibility with technical precision.
+                    </p>
+                    <p class="section-intro mt-3">
+                        I enjoy building systems — not just pages — and creating reusable components that scale across
+                        projects.
+                    </p>
+                </div>
+
+                <div class="card card-soft">
+                    <p class="small-label">Quick Facts</p>
+                    <ul class="mt-4 space-y-2 text-sm muted">
+                        <li>• Based in Washington</li>
+                        <li>• Studying IT Networking (AAS‑T)</li>
+                        <li>• Passionate about UI engineering</li>
+                        <li>• Strong focus on accessibility</li>
+                        <li>• Loves clean typography & layout systems</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
-    <footer class="bg-gray-900 text-gray-300 py-8 mt-12">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <img src="https://cdn.wallpapersafari.com/46/51/01wsum.jpg" alt="Golf Image"
-                class="mx-auto w-full max-w-3xl rounded shadow mb-6" />
-
-            <ul class="space-y-1">
-                <li class="font-semibold">Dennis L. Felicia • 26 January</li>
-                <li>&copy; 2026 Dennis Felicia</li>
-            </ul>
-        </div>
+    <footer class="site-footer">
+        © <span id="year"></span> Dennis Felicia — Final Web Development Project
     </footer>
 
     <script src="script.js"></script>
